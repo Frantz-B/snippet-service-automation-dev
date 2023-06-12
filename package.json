@@ -1,0 +1,24 @@
+{
+  "name": "snippet-service-automation-dev",
+  "version": "1.0.0",
+  "description": "Automated tests for snippet service",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cy:verify": "cypress verify",
+    "cy:version": "cypress version",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "ui": "cypress open",
+    "lint": "eslint .",
+    "test:api": "cypress run --spec 'cypress/integration/api/**/*'",
+    "test": "cypress run"
+  },
+  "dependencies": {
+    "cypress": "^5.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:KargoGlobal/deal-manager-automation.git"
+  }
+}
