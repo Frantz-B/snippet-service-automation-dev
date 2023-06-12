@@ -1,0 +1,87 @@
+{
+    "options": {
+        "force": false
+    },
+    "config": {
+        "has_responsive_width": true,
+        "creative_html": "<div class=\"celtra-ad-v3\"> <!-- externalCreativeId = raw %%TTD_CREATIVEID%% --> <!-- externalPlacementId = raw %%TTD_ADGROUPID%% --> <!-- externalSiteId = raw %%TTD_SITE%% --> <!-- externalSupplierId = raw %%TTD_PARTNERID%% --> <!-- externalSupplierName = raw %%TTD_SUPPLYVENDOR%% --> <!-- externalCampaignId = raw %%TTD_CAMPAIGNID%% --> <!-- externalCreativeSize = raw %%TTD_ADFORMAT%% --> <!-- gpsLat = raw %%TTD_LAT%% --> <!-- gpsLng = raw %%TTD_LONG%% --> <!-- externalLineItemId = raw %%TTD_ADGROUPID%% --> <!-- externalSessionId = raw {uuid} --> <!-- customIdentifiers[kuid] = raw {kuid} --> <!-- customIdentifiers[creative_id] = raw 55352 --> <img src=\"data:image/png,celtra\" style=\"display: none\" onerror=\" (function(img) { var params = {'clickUrl':'%%TTD_CLK%%','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','iosAdvId':'%%TTD_DEVICEID%%','androidAdvId':'%%TTD_DEVICEID%%','tradedesk_zipCode':'%%TTD_ZIPCODE%%','tradedesk_category':'%%TTD_CATEGORY%%','tradedesk_deviceType':'%%TTD_DEVICETYPE%%','tradedesk_adFormat':'%%TTD_ADFORMAT%%','tradedesk_advertiser':'%%TTD_ADVERTISERID%%','externalAdServer':'TradeDesk','tagVersion':'6'}; [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } }); var req = document.createElement('script'); req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1); params.clientTimestamp = new Date/1000; params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset(); params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2); var qs = ''; for (var k in params) { qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]); } var src = 'https://ads.celtra.com/df2a0341/web.js?' + qs; req.src = src; img.parentNode.insertBefore(req, img.nextSibling); })(this); \"/> </div>",
+        "is_kit": true,
+        "adserver": "dfp"
+    },
+    "request_data": {
+        "creative_origin": "km",
+        "creative_id": "kwrapper-hover-test-1",
+        "format": "Hover",
+        "execution": "Standard",
+        "placement_type": "standard",
+        "is_rich_media": true,
+        "enable_download_impression_tracking": true,
+        "options": {
+            "force": false
+        },
+        "config": {
+            "has_responsive_width": true,
+            "creative_html": "<div class=\"celtra-ad-v3\"> <!-- externalCreativeId = raw %%TTD_CREATIVEID%% --> <!-- externalPlacementId = raw %%TTD_ADGROUPID%% --> <!-- externalSiteId = raw %%TTD_SITE%% --> <!-- externalSupplierId = raw %%TTD_PARTNERID%% --> <!-- externalSupplierName = raw %%TTD_SUPPLYVENDOR%% --> <!-- externalCampaignId = raw %%TTD_CAMPAIGNID%% --> <!-- externalCreativeSize = raw %%TTD_ADFORMAT%% --> <!-- gpsLat = raw %%TTD_LAT%% --> <!-- gpsLng = raw %%TTD_LONG%% --> <!-- externalLineItemId = raw %%TTD_ADGROUPID%% --> <!-- externalSessionId = raw {uuid} --> <!-- customIdentifiers[kuid] = raw {kuid} --> <!-- customIdentifiers[creative_id] = raw 55352 --> <img src=\"data:image/png,celtra\" style=\"display: none\" onerror=\" (function(img) { var params = {'clickUrl':'%%TTD_CLK%%','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','iosAdvId':'%%TTD_DEVICEID%%','androidAdvId':'%%TTD_DEVICEID%%','tradedesk_zipCode':'%%TTD_ZIPCODE%%','tradedesk_category':'%%TTD_CATEGORY%%','tradedesk_deviceType':'%%TTD_DEVICETYPE%%','tradedesk_adFormat':'%%TTD_ADFORMAT%%','tradedesk_advertiser':'%%TTD_ADVERTISERID%%','externalAdServer':'TradeDesk','tagVersion':'6'}; [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } }); var req = document.createElement('script'); req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1); params.clientTimestamp = new Date/1000; params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset(); params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2); var qs = ''; for (var k in params) { qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]); } var src = 'https://ads.celtra.com/df2a0341/web.js?' + qs; req.src = src; img.parentNode.insertBefore(req, img.nextSibling); })(this); \"/> </div>",
+            "is_kit": true,
+            "adserver": "dfp"
+        }
+    },
+    "id": 430738,
+    "add_auto_trackers": true,
+    "creative_id": "kwrapper-hover-test-1",
+    "creative_origin": "km",
+    "execution": "Standard",
+    "format": "Hover",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.hh1wk8htksa0?rand=%%CACHEBUSTER%%&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=km&creative_id=kwrapper-hover-test-1&id_alpha=&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-kwrapper-hover-test-1\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/kwrapper-hover-test-1.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"kwrapper-hover-test-1\"\n    data-ad-format=\"Hover\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJrbSIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJkaXNhYmxlX2hvdmVyX2hpZGluZyI6ZmFsc2UsImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": null,
+    "is_rich_media": true,
+    "placement_type": "standard",
+    "primary_click_tracker_id": 6973,
+    "primary_impression_tracker_id": 6972,
+    "version": 1,
+    "uuid": "51cddd7f-145b-4984-96a7-b4225a47fbae",
+    "created_at": "2020-04-01T21:05:44.000Z",
+    "updated_at": "2023-04-05T12:41:57.930Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 6972,
+            "tid": "test.cs-dev.impression.hh1wk8htksa0",
+            "is_auto_created": true,
+            "name": "Hover - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2020-04-01T21:05:44.000Z",
+            "updated_at": "2020-04-01T21:05:44.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 6973,
+            "tid": "test.cs-dev.click.hh1wk8htksa1",
+            "is_auto_created": true,
+            "name": "Hover - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2020-04-01T21:05:44.000Z",
+            "updated_at": "2020-04-01T21:05:44.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 135267,
+            "tid": "test.cs-dev.impression-inside.4h7jtle6yorc4",
+            "is_auto_created": true,
+            "name": "Hover - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-02-16T10:30:58.000Z",
+            "updated_at": "2023-02-16T10:30:58.000Z",
+            "deleted_at": null
+        }
+    ]
+}
