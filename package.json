@@ -15,7 +15,13 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "cypress": "^5.4.0"
+    "cypress": "^5.4.0",
+    "eslint-plugin-cypress": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.18.0"
   },
   "repository": {
     "type": "git",
