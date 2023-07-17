@@ -1,0 +1,19 @@
+{
+	"creative_origin": "KM",
+	"creative_id": "kwrapper-high-rise-test-1",
+	"format": "HighRise",
+	"execution": "Standard",
+	"placement_type": "standard",
+	"is_rich_media": true,
+	"enable_download_impression_tracking": true,
+	"options": {
+		"force": false
+	},
+	"config": {
+    	"has_responsive_width": true,
+        "additional_impression_trackers": ["tracker.com", "tracker2.com"],
+    	"creative_html":"<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: false, versionOverrideUrl: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo/riley-test/platform-3.2.0-20190402.js', templateId: 'resizer-prototype', templateUrl: 'https://s3.amazonaws.com/storage.kargo.com/ad/campaign/rm/kargo/riley-test/resizer-prototype.min.js', templateMacros: { testVersion: 'middle_banner', stopAfterComplete: false, startPosition: 50, trackers: { clickThrough:'https://www.chevrolet.com/suvs/blazer-sporty-suv', clickTrackers: [''], viewabilityTrackers: [''] } }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+    	"is_kit": true,
+        "adserver": "dfp"
+	}
+}

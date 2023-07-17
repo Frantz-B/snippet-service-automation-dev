@@ -1,0 +1,33 @@
+{
+    "format":"Venti",
+    "creative_id": "490f093e-34bd-4505-922a-55da7c32526b",
+    "is_rich_media": true,
+    "config": {
+     "clickZones":{
+         "main_image":{"destination_url":"","click_url":""},
+         "description":{"destination_url":"https://www.kargo.com","click_url":"https://www.kargo.com"},
+         "social_logo":{"destination_url":"https://www.kargo.com","click_url":"https://www.kargo.com"},
+         "call_to_action":{"destination_url":"https://www.kargo.com","click_url":"https://www.kargo.com"},
+         "watch_on_social":{"destination_url":"","click_url":""},
+         "carousel_trackers_0":{"destination_url":"https://www.kargo.com","click_url":"https://www.kargo.com"},
+         "carousel_trackers_1":{"destination_url":"https://www.kargo.com","click_url":"https://www.kargo.com"},
+         "carousel_trackers_2":{"destination_url":"https://www.kargo.com","click_url":"https://www.kargo.com"}
+         
+     },
+     "manualTrackers":{},
+     "composer_creative_id":7437,
+     "is_social":true,
+     "is_video":false,
+     "is_kit":true,
+     "kit_test_trackers":false,
+     "use_ad_server":false,
+     "has_responsive_width":true,
+     "creative_html":"<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"\n(function(img) {\n  var Kargo = window.Kargo = window.Kargo || {};\n  var adTagValues = Kargo.PlatformMacros;\n  var macros = {};\n  if (adTagValues) {\n    for (var key in adTagValues) {\n      if (adTagValues.hasOwnProperty(key)) {\n        macros[key] = adTagValues[key];\n      }\n    }\n  }\n\n  var tag = {\n    anchorNode: img,\n    adTagMetadata: {\n      creative: macros.creative,\n      format: macros.format,\n      slot: macros.slot,\n      source: macros.source,\n      adTagVersion: macros.adTagVersion\n    },\n    debug: false,\n    templateId: 'social-carousel-1',\n    templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/social-carousel-1.min.js',\n    templateMacros: {\n      // Carousel should be an array of images/videos, see public/social-carousel-1.html\n      carousel: [{'clickThrough':'https://www.kargo.com','clickTracker':'{{CAROUSEL_TRACKERS_0}}','type':'image','url':'https://storage.cloud.kargo.com/ad/composer/1685675884917.png'},{'clickThrough':'https://www.kargo.com','clickTracker':'{{CAROUSEL_TRACKERS_1}}','type':'image','url':'https://storage.cloud.kargo.com/ad/composer/1685576047846.png'},{'clickThrough':'https://www.kargo.com','clickTracker':'{{CAROUSEL_TRACKERS_2}}','type':'video','url':'https://storage.cloud.kargo.com/ad/mos/videos/7e4f99a68add9807c284842fb0925ac9.mp4'}],\n      logoImage: 'https://storage.cloud.kargo.com/ad/composer/1685574907108.png',\n      cta: 'test',\n      sponsoredBy: 'test',\n      description: 'test',\n      backgroundColor: '',\n      trackers: {\n        socialIconClickThrough: '{{SOCIAL_CLICK}}',\n        callToActionClickThrough: '{{CTA_CLICK}}',\n        descriptionClickThrough: '{{DESCRIPTION_CLICK}}',\n        // the following impression trackers should be in array format\n        socialIconImpression: '{{SOCIAL_ICON_IMPRESSION}}',\n        callToActionImpression: '{{CTA_IMPRESSION}}',\n        descriptionImpression: '{{DESCRIPTION_IMPRESSION}}',\n        viewabilityTrackers: ['']\n      }\n    },\n    clickMacros: [''],\n    moat: {\n      ids: macros.moatTag,\n      partnerCode: 'kargovideojstag'\n    }\n  };\n\n  var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {};\n  var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {};\n  var templates = AdPlatform.templates = AdPlatform.templates || {};\n  var template = templates[tag.templateId] = templates[tag.templateId] || {};\n\n  template.queue = template.queue || [];\n  template.queue.push(tag);\n\n  if (!template.script) {\n    template.script = document.createElement('script');\n    template.script.type = 'application/javascript';\n    template.script.src = tag.templateUrl;\n    img.parentNode.insertBefore(template.script, img);\n  }\n\n})(this);\n\"/>",
+     "additional_impression_trackers":[],
+     "adserver":"xandr"
+     },
+     "dsp":"",
+    "snippetId":"b3c18fb1-7766-42a4-92f2-39030dcbdf8a",
+    "creative_origin": "composer"
+ }
+ 

@@ -1,0 +1,38 @@
+{
+	"creative_origin": "DM",
+	"name": "ss deploy test 12",
+	"placement_type": null,
+	"is_ad_builder": false,
+	"ad_builder_ad_id": null,
+	"add_auto_trackers": true,
+	"options": [],
+	"enable_download_impression_tracking": false,
+	"config": {
+		"adserver": "kargo",
+		"add_ext_tracker_placed": false,
+		"prepend_dsp_url_macro": false,
+		"is_kit": false,
+		"additional_impression_trackers": [],
+		"additional_received_impression_trackers": [],
+		"ext_tracker_placed_options": {
+			"query_params": {
+				"payload_campaign_identifier": "rrwy_37629",
+				"t_creative_type": "HIGHRISE",
+				"t_exchange": "SSP",
+				"t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+				"t_publisher": "%%ADUNIT%%",
+				"t_site": "%%SITE%%"
+			}
+		},
+		"is_rich_media": true,
+		"has_kargo_branding": true,
+		"creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"\n(function(img) {\n  var Kargo = window.Kargo = window.Kargo || {};\n  var adTagValues = Kargo.PlatformMacros;\n  var macros = {};\n  if (adTagValues) {\n    for (var key in adTagValues) {\n      if (adTagValues.hasOwnProperty(key)) {\n        macros[key] = adTagValues[key];\n      }\n    }\n  }\n\n  var tag = {\n    anchorNode: img,\n    adTagMetadata: {\n      creative: macros.creative,\n      format: macros.format,\n      slot: macros.slot,\n      source: macros.source,\n      adTagVersion: macros.adTagVersion\n    },\n    debug: false,\n    templateId: 'highrise-video-scroll-reactive',\n    templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/highrise-video-scroll-reactive.min.js',\n    templateMacros: {\n      mainImage: 'https://storage.cloud.kargo.com/ad/kailtra/HighriseVideoScrollReactive/1646187307744-bgimagescomedy.png',\n      videoSource: 'https://storage.cloud.kargo.com/ad/mos/videos/6f5e70010dfe34b22c777c265fd2fff9.mp4',\n      midImage: 'https://storage.cloud.kargo.com/ad/kailtra/HighriseVideoScrollReactive/1646187307656-copyR4.png',\n      logoImage: '',\n      ctaImage: 'https://storage.cloud.kargo.com/ad/kailtra/HighriseVideoScrollReactive/1645128257630-logo.png',\n      endframeImage: '',\n      midImageYOrigin: 'center',\n      midImageYValue: '0',\n      midImageXOrigin: 'center',\n      midImageXValue: '0',\n      trackers: {\n        clickThrough: '{{K_CLICK}}',\n        clickImpression: [''].concat(macros['clickTrackers']),\n        quartileStart: ['', ''].concat(macros['start']),\n        quartileFirst: [''].concat(macros['firstQuartile']),\n        quartileMid: [''].concat(macros['midQuartile']),\n        quartileThird: [''].concat(macros['thirdQuartile']),\n        quartileComplete: [''].concat(macros['complete']),\n        unmute: [''].concat(macros['unmute']),\n        mute: [''].concat(macros['mute']),\n        replay: [''].concat(macros['replay']),\n      }\n    },\n    clickMacros: [''],\n\n    moat: {\n      ids: macros.moatTag,\n      partnerCode: 'kargovideojstag'\n    }\n  };\n\n  var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {};\n  var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {};\n  var templates = AdPlatform.templates = AdPlatform.templates || {};\n  var template = templates[tag.templateId] = templates[tag.templateId] || {};\n\n  template.queue = template.queue || [];\n  template.queue.push(tag);\n\n  if (!template.script) {\n    template.script = document.createElement('script');\n    template.script.type = 'application/javascript';\n    template.script.src = tag.templateUrl;\n    img.parentNode.insertBefore(template.script, img);\n  }\n\n})(this);\n\">",
+		"click_url": "https://www.peacocktv.com/dr/originals"
+	},
+	"trackers_config": [],
+	"creative_id": 37629,
+	"is_rich_media": true,
+	"bidder_name": "bid-test",
+	"format": "HighRise",
+	"execution": "Viewstream"
+}

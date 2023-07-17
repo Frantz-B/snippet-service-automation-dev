@@ -1,0 +1,87 @@
+{
+    "options": {
+        "force": false
+    },
+    "config": {
+        "has_responsive_width": true,
+        "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: true, versionOverride: '3.5.1', templateId: 'wrapper', templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/wrapper.min.js', templateMacros: { trackers: { clickThrough: 'https://kargo.com/', clickImpression: [''], }, breakoutZIndex: 0, bannerHeight: 50, frameSize: 20, backgroundImage: 'https://storage.cloud.kargo.com/ad/campaign/rm/hulu/wrapper.png', banner: 'https://storage.cloud.kargo.com/ad/campaign/rm/hulu/bnr.png', }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+        "is_kit": true,
+        "adserver": "dfp"
+    },
+    "request_data": {
+        "creative_origin": "km",
+        "creative_id": "kwrapper-wrapper-standard-test-1",
+        "format": "Wrapper",
+        "execution": "Standard",
+        "placement_type": "standard",
+        "is_rich_media": true,
+        "enable_download_impression_tracking": true,
+        "options": {
+            "force": false
+        },
+        "config": {
+            "has_responsive_width": true,
+            "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: true, versionOverride: '3.5.1', templateId: 'wrapper', templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/wrapper.min.js', templateMacros: { trackers: { clickThrough: 'https://kargo.com/', clickImpression: [''], }, breakoutZIndex: 0, bannerHeight: 50, frameSize: 20, backgroundImage: 'https://storage.cloud.kargo.com/ad/campaign/rm/hulu/wrapper.png', banner: 'https://storage.cloud.kargo.com/ad/campaign/rm/hulu/bnr.png', }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+            "is_kit": true,
+            "adserver": "dfp"
+        }
+    },
+    "id": 430851,
+    "add_auto_trackers": true,
+    "creative_id": "kwrapper-wrapper-standard-test-1",
+    "creative_origin": "km",
+    "execution": "Standard",
+    "format": "Wrapper",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.12pb48sk8klgjmt?rand=%%CACHEBUSTER%%&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=km&creative_id=kwrapper-wrapper-standard-test-1&id_alpha=ID KM&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-kwrapper-wrapper-standard-test-1\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/kwrapper-wrapper-standard-test-1.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"kwrapper-wrapper-standard-test-1\"\n    data-ad-format=\"Wrapper\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJrbSIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJkaXNhYmxlX2hvdmVyX2hpZGluZyI6ZmFsc2UsImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": "ID KM",
+    "is_rich_media": true,
+    "placement_type": "standard",
+    "primary_click_tracker_id": 7398,
+    "primary_impression_tracker_id": 7397,
+    "version": 1,
+    "uuid": "28888c53-3e42-4e80-b992-eee23902df18",
+    "created_at": "2020-04-03T19:41:48.000Z",
+    "updated_at": "2023-07-17T08:31:52.868Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 7397,
+            "tid": "test.cs-dev.impression.12pb48sk8klgjmt",
+            "is_auto_created": true,
+            "name": "Wrapper - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2020-04-03T19:41:48.000Z",
+            "updated_at": "2020-04-03T19:41:48.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 7398,
+            "tid": "test.cs-dev.click.12pb48sk8klgjmu",
+            "is_auto_created": true,
+            "name": "Wrapper - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2020-04-03T19:41:48.000Z",
+            "updated_at": "2020-04-03T19:41:48.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 135274,
+            "tid": "test.cs-dev.impression-inside.4h7jtle748r31",
+            "is_auto_created": true,
+            "name": "Wrapper - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-02-16T13:06:29.000Z",
+            "updated_at": "2023-02-16T13:06:29.000Z",
+            "deleted_at": null
+        }
+    ]
+}

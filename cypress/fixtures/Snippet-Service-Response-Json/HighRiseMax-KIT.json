@@ -1,0 +1,106 @@
+{
+    "options": {
+        "force": false
+    },
+    "config": {
+        "click_macro": "${TM_CLICK_URL}",
+        "additional_impression_trackers": [
+            "https://add-imp-tracker.com",
+            "https://add-imp-tracker2.com"
+        ],
+        "additional_received_impression_trackers": [
+            "https://add-received-imp-trackers.com",
+            "https://add-received-imp-trackers2.com"
+        ],
+        "has_responsive_width": true,
+        "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: false, versionOverrideUrl: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo/riley-test/platform-3.2.0-20190402.js', templateId: 'resizer-prototype', templateUrl: 'https://s3.amazonaws.com/storage.kargo.com/ad/campaign/rm/kargo/riley-test/resizer-prototype.min.js', templateMacros: { testVersion: 'small_banner', stopAfterComplete: false, startPosition: 150, trackers: { clickThrough: '%%CLICK_URL_UNESC%%https://www.chevrolet.com/suvs/blazer-sporty-suv', clickTrackers: [''], viewabilityTrackers: [''] } }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+        "is_kit": true,
+        "adserver": "dfp"
+    },
+    "request_data": {
+        "creative_origin": "km",
+        "creative_id": "kwrapper-high-rise-max-test-1",
+        "format": "HighRise",
+        "execution": "Standard",
+        "placement_type": "standard",
+        "is_rich_media": true,
+        "enable_download_impression_tracking": true,
+        "options": {
+            "force": false
+        },
+        "bidder_name": "appnexus",
+        "config": {
+            "click_macro": "${TM_CLICK_URL}",
+            "additional_impression_trackers": [
+                "https://add-imp-tracker.com",
+                "https://add-imp-tracker2.com"
+            ],
+            "additional_received_impression_trackers": [
+                "https://add-received-imp-trackers.com",
+                "https://add-received-imp-trackers2.com"
+            ],
+            "has_responsive_width": true,
+            "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: false, versionOverrideUrl: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo/riley-test/platform-3.2.0-20190402.js', templateId: 'resizer-prototype', templateUrl: 'https://s3.amazonaws.com/storage.kargo.com/ad/campaign/rm/kargo/riley-test/resizer-prototype.min.js', templateMacros: { testVersion: 'small_banner', stopAfterComplete: false, startPosition: 150, trackers: { clickThrough: '%%CLICK_URL_UNESC%%https://www.chevrolet.com/suvs/blazer-sporty-suv', clickTrackers: [''], viewabilityTrackers: [''] } }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+            "is_kit": true,
+            "adserver": "dfp"
+        }
+    },
+    "id": 430849,
+    "add_auto_trackers": true,
+    "creative_id": "kwrapper-high-rise-max-test-1",
+    "creative_origin": "km",
+    "execution": "Standard",
+    "format": "HighRise",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.12pb48sk8klary7?rand=%%CACHEBUSTER%%&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=km&creative_id=kwrapper-high-rise-max-test-1&id_alpha=ID KM 2&url=\" /> \n \n\n<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://add-received-imp-trackers.com\" />\n<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://add-received-imp-trackers2.com\" />\n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-kwrapper-high-rise-max-test-1\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/kwrapper-high-rise-max-test-1.js\"\n    data-click-url=\"${TM_CLICK_URL}\"\n    data-creative-id=\"${CREATIVE_ID}\"\n    data-ad-format=\"HighRise\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-cachebuster=\"${CACHEBUSTER}\"\n    data-height=\"${HEIGHT}\"\n    data-width=\"${WIDTH}\"\n    data-creative-size=\"${CREATIVE_SIZE}\"\n    data-adv-id=\"${ADV_ID}\"\n    data-auction-id=\"${AUCTION_ID}\"\n    data-cp-id=\"${CP_ID}\"\n    data-deal-id=\"${DEAL_ID}\"\n    data-io-id=\"${IO_ID}\"\n    data-cpg-id=\"${CPG_ID}\"\n    data-site-id=\"${SITE_ID}\"\n    data-publisher-id=\"${PUBLISHER_ID}\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJrbSIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6ZmFsc2UsImlzX3NvY2lhbCI6ZmFsc2V9\"\n    ></script>\n\n",
+    "id_alpha": "ID KM 2",
+    "is_rich_media": true,
+    "placement_type": "standard",
+    "primary_click_tracker_id": 7394,
+    "primary_impression_tracker_id": 7393,
+    "version": 1,
+    "uuid": "70218f59-fe97-4806-8d34-628eded4f04e",
+    "created_at": "2020-04-03T19:37:18.000Z",
+    "updated_at": "2023-07-17T08:35:26.148Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 7393,
+            "tid": "test.cs-dev.impression.12pb48sk8klary7",
+            "is_auto_created": true,
+            "name": "HighRise - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2020-04-03T19:37:18.000Z",
+            "updated_at": "2020-04-03T19:37:18.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 7394,
+            "tid": "test.cs-dev.click.12pb48sk8klary8",
+            "is_auto_created": true,
+            "name": "HighRise - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2020-04-03T19:37:18.000Z",
+            "updated_at": "2020-04-03T19:37:18.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 135273,
+            "tid": "test.cs-dev.impression-inside.4h7jtle740zcu",
+            "is_auto_created": true,
+            "name": "HighRise - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-02-16T13:00:27.000Z",
+            "updated_at": "2023-02-16T13:00:27.000Z",
+            "deleted_at": null
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"creative_origin": "KM",
+	"creative_id": "kwrapper-non-vast-outstream-video-test-2",
+	"format": "NonVastOutstreamVideo",
+	"execution": "Standard",
+	"placement_type": "standard",
+	"is_rich_media": true,
+	"enable_download_impression_tracking": true,
+	"options": {
+		"force": false
+	},
+	"config": {
+    	"has_responsive_width": true,
+        "has_kargo_branding": true,
+    	"creative_html":"<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"(function(img) { var defaultValues = { 'moatTag': null, 'start': [], 'firstQuartile': [], 'midQuartile': [], 'thirdQuartile': [], 'complete': [], 'clickTrackers': [], 'clickUrl': '', 'expand': [], 'mute': [], 'unmute': [], 'replay': [] }; var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = defaultValues; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion, }, debug: false, name: 'AHA_AppleCampaign_V5_Female_328996958-1645228312124', versionOverride: '', versionOverrideUrl: '', templateId: 'viewstream-template', templateUrl: 'https://storage.cloud.kargo.com/ad/network/tag/viewstream-template.js', templateMacros: { videoUrl: 'https://storage.cloud.kargo.com/ad/mos/videos/820eb1be21c9ef19541bf2d97fe7458d.mp4', spriteUrl: 'https://storage.cloud.kargo.com/ad/mos/spritesheets/820eb1be21c9ef19541bf2d97fe7458d-large/tmp_61_4_338x600_13_1_3_0.jpg', audioUrl: 'https://storage.cloud.kargo.com/ad/mos/audios/820eb1be21c9ef19541bf2d97fe7458d/kstream_-32-WajkzBrcM8wi-.mp3', ratio: '0.5633333333333334', hasAudio: true, vertical: true, disableOutOfViewPause: macros.disableOutOfViewPause, trackers: { clickThrough: macros['clickUrl'], clickImpression: [''].concat(macros['clickTrackers']), quartileStart: ['', ''].concat(macros['start']), quartileFirst: [''].concat(macros['firstQuartile']), quartileMid: [''].concat(macros['midQuartile']), quartileThird: [''].concat(macros['thirdQuartile']), quartileComplete: [''].concat(macros['complete']), unmute: [''].concat(macros['unmute']), mute: [''].concat(macros['mute']), replay: [''].concat(macros['replay']), }, }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' }, }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); }})(this);\"/>",
+    	"is_kit": true,
+        "adserver": "dfp"
+	}
+}

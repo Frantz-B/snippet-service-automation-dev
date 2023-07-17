@@ -1,0 +1,28 @@
+{
+	"creative_origin": "KM",
+	"creative_id": "kwrapper-high-rise-max-test-1",
+	"format": "HighRise",
+	"execution": "Standard",
+	"placement_type": "standard",
+	"is_rich_media": true,
+	"enable_download_impression_tracking": true,
+	"options": {
+		"force": false
+	},
+    "bidder_name": "appnexus",
+	"config": {
+        "click_macro": "${TM_CLICK_URL}",
+        "additional_impression_trackers": [
+            "https://add-imp-tracker.com",
+            "https://add-imp-tracker2.com"
+        ],
+        "additional_received_impression_trackers": [
+            "https://add-received-imp-trackers.com",
+            "https://add-received-imp-trackers2.com"
+        ],
+    	"has_responsive_width": true,
+    	"creative_html":"<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: false, versionOverrideUrl: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo/riley-test/platform-3.2.0-20190402.js', templateId: 'resizer-prototype', templateUrl: 'https://s3.amazonaws.com/storage.kargo.com/ad/campaign/rm/kargo/riley-test/resizer-prototype.min.js', templateMacros: { testVersion: 'small_banner', stopAfterComplete: false, startPosition: 150, trackers: { clickThrough: '%%CLICK_URL_UNESC%%https://www.chevrolet.com/suvs/blazer-sporty-suv', clickTrackers: [''], viewabilityTrackers: [''] } }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+    	"is_kit": true,
+        "adserver": "dfp"
+	}
+}

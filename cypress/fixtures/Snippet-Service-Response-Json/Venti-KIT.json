@@ -1,0 +1,87 @@
+{
+    "options": {
+        "force": false
+    },
+    "config": {
+        "has_responsive_width": true,
+        "creative_html": "<div class=\"celtra-ad-v3\"> <!-- externalCreativeId = raw %ecid! --> <!-- externalPlacementId = raw %epid! --> <!-- externalSiteId = raw %esid! --> <!-- externalSiteName = raw %%SITE%% --> <!-- externalLineItemId = raw %eaid! --> <!-- externalCampaignId = raw %ebuy! --> <!-- externalSessionId = raw {uuid} --> <!-- customIdentifiers[kuid] = raw {kuid} --> <img src=\"data:image/png,celtra\" style=\"display: none\" onerror=\" (function(img) { var params = {'clickUrl':'https://tk.kargo.com/t/.1R7HIs7tPj4FIWh?rand=%%CACHEBUSTER%%&kid=%%PATTERN:kid%%&kuid=%%PATTERN:kuid%%&uuid=%%PATTERN:uuid%%&url=%%CLICK_URL_UNESC%%','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','iosAdvId':'%%ADVERTISING_IDENTIFIER_PLAIN%%','androidAdvId':'%%ADVERTISING_IDENTIFIER_PLAIN%%','externalAdServer':'DFPPremium','tagVersion':'4'}; [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } }); var req = document.createElement('script'); req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1); params.clientTimestamp = new Date/1000; params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset(); params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2); var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.celtra.com/35f54d78/web.js?'; for (var k in params) { src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]); } req.src = src; img.parentNode.insertBefore(req, img.nextSibling); })(this); \"/>",
+        "is_kit": true,
+        "adserver": "dfp"
+    },
+    "request_data": {
+        "creative_origin": "km",
+        "creative_id": "kwrapper-venti-test-1",
+        "format": "Venti",
+        "execution": "Standard",
+        "placement_type": "standard",
+        "is_rich_media": true,
+        "enable_download_impression_tracking": true,
+        "options": {
+            "force": false
+        },
+        "config": {
+            "has_responsive_width": true,
+            "creative_html": "<div class=\"celtra-ad-v3\"> <!-- externalCreativeId = raw %ecid! --> <!-- externalPlacementId = raw %epid! --> <!-- externalSiteId = raw %esid! --> <!-- externalSiteName = raw %%SITE%% --> <!-- externalLineItemId = raw %eaid! --> <!-- externalCampaignId = raw %ebuy! --> <!-- externalSessionId = raw {uuid} --> <!-- customIdentifiers[kuid] = raw {kuid} --> <img src=\"data:image/png,celtra\" style=\"display: none\" onerror=\" (function(img) { var params = {'clickUrl':'https://tk.kargo.com/t/.1R7HIs7tPj4FIWh?rand=%%CACHEBUSTER%%&kid=%%PATTERN:kid%%&kuid=%%PATTERN:kuid%%&uuid=%%PATTERN:uuid%%&url=%%CLICK_URL_UNESC%%','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','iosAdvId':'%%ADVERTISING_IDENTIFIER_PLAIN%%','androidAdvId':'%%ADVERTISING_IDENTIFIER_PLAIN%%','externalAdServer':'DFPPremium','tagVersion':'4'}; [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } }); var req = document.createElement('script'); req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1); params.clientTimestamp = new Date/1000; params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset(); params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2); var src = (window.location.protocol == 'https:' ? 'https' : 'http') + '://ads.celtra.com/35f54d78/web.js?'; for (var k in params) { src += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]); } req.src = src; img.parentNode.insertBefore(req, img.nextSibling); })(this); \"/>",
+            "is_kit": true,
+            "adserver": "dfp"
+        }
+    },
+    "id": 430843,
+    "add_auto_trackers": true,
+    "creative_id": "kwrapper-venti-test-1",
+    "creative_origin": "km",
+    "execution": "Standard",
+    "format": "Venti",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.12pb48sk8kkcx1v?rand=%%CACHEBUSTER%%&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=km&creative_id=kwrapper-venti-test-1&id_alpha=ID KM&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-kwrapper-venti-test-1\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/kwrapper-venti-test-1.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"kwrapper-venti-test-1\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJrbSIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6ZmFsc2UsImlzX3NvY2lhbCI6ZmFsc2V9\"\n    ></script>\n\n",
+    "id_alpha": "ID KM",
+    "is_rich_media": true,
+    "placement_type": "standard",
+    "primary_click_tracker_id": 7382,
+    "primary_impression_tracker_id": 7381,
+    "version": 1,
+    "uuid": "2d70e626-1642-4aa9-ba5a-ce3133fe33ae",
+    "created_at": "2020-04-03T19:10:59.000Z",
+    "updated_at": "2023-06-15T10:47:19.725Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 7381,
+            "tid": "test.cs-dev.impression.12pb48sk8kkcx1v",
+            "is_auto_created": true,
+            "name": "Venti - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2020-04-03T19:10:59.000Z",
+            "updated_at": "2020-04-03T19:10:59.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 7382,
+            "tid": "test.cs-dev.click.12pb48sk8kkcx1w",
+            "is_auto_created": true,
+            "name": "Venti - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2020-04-03T19:10:59.000Z",
+            "updated_at": "2020-04-03T19:10:59.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 93215,
+            "tid": "test.cs-dev.impression-inside.5u4fnul5ifn435",
+            "is_auto_created": true,
+            "name": "Venti - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2022-07-12T17:13:41.000Z",
+            "updated_at": "2022-07-12T17:13:41.000Z",
+            "deleted_at": null
+        }
+    ]
+}

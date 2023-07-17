@@ -1,0 +1,18 @@
+{
+	"creative_origin": "KM",
+	"creative_id": "kwrapper-breakaway-test-1",
+	"format": "Breakaway",
+	"execution": "Standard",
+	"placement_type": "standard",
+	"is_rich_media": true,
+	"enable_download_impression_tracking": true,
+	"options": {
+		"force": false
+	},
+	"config": {
+    	"has_responsive_width": true,
+    	"creative_html":"<div class=\"celtra-ad-v3\"> <!-- externalCreativeId = raw %ecid! --> <!-- externalPlacementId = raw %epid! --> <!-- externalSiteId = raw %esid! --> <!-- externalSiteName = raw %%SITE%% --> <!-- externalLineItemId = raw %eaid! --> <!-- externalCampaignId = raw %ebuy! --> <!-- externalAdvertiserId = raw %eadv! --> <!-- externalSessionId = raw {uuid} --> <!-- customIdentifiers[kuid] = raw {kuid} --> <!-- customIdentifiers[creative_id] = raw 57085 --> <img src=\"data:image/png,celtra\" style=\"display: none\" onerror=\" (function(img) { var params = {'clickUrl':'%%CLICK_URL_UNESC%%','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','iosAdvId':'%%ADVERTISING_IDENTIFIER_PLAIN%%','androidAdvId':'%%ADVERTISING_IDENTIFIER_PLAIN%%','externalAdServer':'DFPPremium','tagVersion':'6'}; [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } }); var req = document.createElement('script'); req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1); params.clientTimestamp = new Date/1000; params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset(); params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2); var qs = ''; for (var k in params) { qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]); } var src = 'https://ads.celtra.com/1fb46328/web.js?' + qs; req.src = src; img.parentNode.insertBefore(req, img.nextSibling); })(this); \"/> </div>",
+    	"is_kit": true,
+        "adserver": "dfp"
+	}
+}

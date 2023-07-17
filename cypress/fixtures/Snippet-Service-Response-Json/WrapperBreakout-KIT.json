@@ -1,0 +1,87 @@
+{
+    "options": {
+        "force": false
+    },
+    "config": {
+        "has_responsive_width": true,
+        "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: true, versionOverride: '3.5.1', templateId: 'wrapper', templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/wrapper-demo.min.js', templateMacros: { trackers: { clickThrough: 'https://ad.doubleclick.net/ddm/trackclk/N475604.346083KARGO/B23940684.269741927;dc_trk_aid=464719564;dc_trk_cid=130242851;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=', clickImpression: [''], }, bannerHeight: 50, frameSize: 20, breakout: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo-demo/kargo_wrapper_breakout.png', backgroundImage: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo-demo/wrapper%20%281%29.png', banner: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo-demo/bnr%20%281%29.png', }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+        "is_kit": true,
+        "adserver": "dfp"
+    },
+    "request_data": {
+        "creative_origin": "km",
+        "creative_id": "kwrapper-wrapper-breakout-test-1",
+        "format": "Wrapper",
+        "execution": "Breakout",
+        "placement_type": "standard",
+        "is_rich_media": true,
+        "enable_download_impression_tracking": true,
+        "options": {
+            "force": false
+        },
+        "config": {
+            "has_responsive_width": true,
+            "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\" (function(img) { var Kargo = window.Kargo = window.Kargo || {}; var adTagValues = Kargo.PlatformMacros; var macros = {}; if (adTagValues) { for (var key in adTagValues) { if (adTagValues.hasOwnProperty(key)) { macros[key] = adTagValues[key]; } } } var tag = { anchorNode: img, adTagMetadata: { creative: macros.creative, format: macros.format, slot: macros.slot, source: macros.source, adTagVersion: macros.adTagVersion }, debug: true, versionOverride: '3.5.1', templateId: 'wrapper', templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/wrapper-demo.min.js', templateMacros: { trackers: { clickThrough: 'https://ad.doubleclick.net/ddm/trackclk/N475604.346083KARGO/B23940684.269741927;dc_trk_aid=464719564;dc_trk_cid=130242851;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=', clickImpression: [''], }, bannerHeight: 50, frameSize: 20, breakout: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo-demo/kargo_wrapper_breakout.png', backgroundImage: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo-demo/wrapper%20%281%29.png', banner: 'https://storage.cloud.kargo.com/ad/campaign/rm/kargo-demo/bnr%20%281%29.png', }, clickMacros: [''], moat: { ids: macros.moatTag, partnerCode: 'kargovideojstag' } }; var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {}; var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {}; var templates = AdPlatform.templates = AdPlatform.templates || {}; var template = templates[tag.templateId] = templates[tag.templateId] || {}; template.queue = template.queue || []; template.queue.push(tag); if (!template.script) { template.script = document.createElement('script'); template.script.type = 'application/javascript'; template.script.src = tag.templateUrl; img.parentNode.insertBefore(template.script, img); } })(this); \">",
+            "is_kit": true,
+            "adserver": "dfp"
+        }
+    },
+    "id": 430854,
+    "add_auto_trackers": true,
+    "creative_id": "kwrapper-wrapper-breakout-test-1",
+    "creative_origin": "km",
+    "execution": "Breakout",
+    "format": "Wrapper",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.12pb48sk8klmysp?rand=%%CACHEBUSTER%%&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=km&creative_id=kwrapper-wrapper-breakout-test-1&id_alpha=ID KM&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-kwrapper-wrapper-breakout-test-1\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/kwrapper-wrapper-breakout-test-1.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"kwrapper-wrapper-breakout-test-1\"\n    data-ad-format=\"Wrapper\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Breakout\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJrbSIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJkaXNhYmxlX2hvdmVyX2hpZGluZyI6ZmFsc2UsImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": "ID KM",
+    "is_rich_media": true,
+    "placement_type": "standard",
+    "primary_click_tracker_id": 7404,
+    "primary_impression_tracker_id": 7403,
+    "version": 1,
+    "uuid": "c7d98afd-7add-48c1-91ed-e401fd6a8c49",
+    "created_at": "2020-04-03T19:46:47.000Z",
+    "updated_at": "2023-07-17T08:15:40.513Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 7403,
+            "tid": "test.cs-dev.impression.12pb48sk8klmysp",
+            "is_auto_created": true,
+            "name": "Wrapper - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2020-04-03T19:46:47.000Z",
+            "updated_at": "2020-04-03T19:46:47.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 7404,
+            "tid": "test.cs-dev.click.12pb48sk8klmysq",
+            "is_auto_created": true,
+            "name": "Wrapper - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2020-04-03T19:46:47.000Z",
+            "updated_at": "2020-04-03T19:46:47.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 93217,
+            "tid": "test.cs-dev.impression-inside.5u4fnul5ifnb1n",
+            "is_auto_created": true,
+            "name": "Wrapper - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2022-07-12T17:13:50.000Z",
+            "updated_at": "2022-07-12T17:13:50.000Z",
+            "deleted_at": null
+        }
+    ]
+}

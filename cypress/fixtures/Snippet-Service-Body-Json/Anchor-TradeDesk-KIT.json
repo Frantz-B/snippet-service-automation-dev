@@ -1,0 +1,19 @@
+{
+	"creative_origin": "KM",
+	"creative_id": "kwrapper-key-art-test-1",
+	"format": "Anchor",
+	"execution": "Standard",
+	"placement_type": "standard",
+	"is_rich_media": true,
+    "bidder_name": "tradedesk",
+	"enable_download_impression_tracking": true,
+	"options": {
+		"force": false
+	},
+	"config": {
+    	"has_responsive_width": true,
+    	"creative_html":"<div class=\"celtra-ad-v3\">\n    <!-- eas.JSVUVERfQ1JFQVRJVkVJRCUl = raw %%TTD_CREATIVEID%% -->\n    <!-- eas.JSVUVERfREVWSUNFVFlQRSUl = raw %%TTD_DEVICETYPE%% -->\n    <!-- externalCreativeId           = raw %%TTD_CREATIVEID%% -->\n    <!-- externalPlacementId          = raw %%TTD_ADGROUPID%% -->\n    <!-- externalSiteId               = raw %%TTD_SITE%% -->\n    <!-- externalSupplierId           = raw %%TTD_PARTNERID%% -->\n    <!-- externalSupplierName         = raw %%TTD_SUPPLYVENDOR%% -->\n    <!-- externalCampaignId           = raw %%TTD_CAMPAIGNID%% -->\n    <!-- externalCreativeSize         = raw %%TTD_ADFORMAT%% -->\n    <!-- gpsLat                       = raw %%TTD_LAT%% -->\n    <!-- gpsLng                       = raw %%TTD_LONG%% -->\n    <!-- externalLineItemId           = raw %%TTD_ADGROUPID%% -->\n    <!-- externalAudienceIds          = raw %%TTD_DCO_MAPPINGRULE_MACRO%% -->\n    <img src=\"data:image/png,celtra\" style=\"display: none\" onerror=\"\n        (function(img) {\n            var params = {'clickUrl':'%%TTD_CLK%%','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','iosAdvId':'%%TTD_DEVICEID%%','androidAdvId':'%%TTD_DEVICEID%%','tradedesk_zipCode':'%%TTD_ZIPCODE%%','tradedesk_category':'%%TTD_CATEGORY%%','tradedesk_deviceType':'%%TTD_DEVICETYPE%%','tradedesk_adFormat':'%%TTD_ADFORMAT%%','tradedesk_advertiser':'%%TTD_ADVERTISERID%%','externalAdServer':'TradeDesk','tagVersion':'html-standard-7'};\n            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });\n            var req = document.createElement('script');\n            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);\n            params.clientTimestamp = new Date/1000;\n            params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();\n            params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);\n            var qs = '';\n            for (var k in params) {\n                qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);\n            }\n            var src = 'https://ads.celtra.com/1961d658/web.js?' + qs;\n            req.src = src;\n            img.parentNode.insertBefore(req, img.nextSibling);\n        })(this);\n    \"/>\n</div>",
+    	"is_kit": true,
+        "adserver": "dfp"
+	}
+}
