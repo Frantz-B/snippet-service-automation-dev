@@ -764,5 +764,125 @@ context('Snippet-Service API Test', () => {
         });
       });
     });
+
+    it('Test Snippet Service for Social Video 5 Template KIT Creative', () => {
+      let socialVideoPayload;
+      let socialVideoResponse;
+      cy.fixture('/Snippet-Service-Body-Json/SocialVideo5Template-KIT.json').then((payload) => {
+        socialVideoPayload = extend(socialVideoPayload, payload);
+
+        const snippetServiceRequest = requestOptions({
+          method: 'POST',
+          body: socialVideoPayload,
+          url: 'https://ad-snippet-service.dev.kargo.com/api/snippet',
+        });
+
+        cy.request(snippetServiceRequest).then((snippetServiceResponse) => {
+          cy.fixture('/Snippet-Service-Response-Json/SocialVideo5Template-KIT.json').then((payload2) => {
+            socialVideoResponse = extend(socialVideoResponse, payload2);
+
+            assert.deepEqual(socialVideoResponse.options, snippetServiceResponse.body.options, 'option object');
+            assert.deepEqual(socialVideoResponse.config, snippetServiceResponse.body.config, 'config object');
+            assert.deepEqual(socialVideoResponse.request_data, snippetServiceResponse.body.request_data, 'request data object');
+            assert.equal(socialVideoResponse.id, snippetServiceResponse.body.id, 'id');
+            assert.equal(socialVideoResponse.add_auto_trackers, snippetServiceResponse.body.add_auto_trackers, 'add auto trackers');
+            assert.equal(socialVideoResponse.creative_id, snippetServiceResponse.body.creative_id, 'Creative id');
+            assert.equal(socialVideoResponse.creative_origin, snippetServiceResponse.body.creative_origin, 'Creative Origin');
+            assert.equal(socialVideoResponse.execution, snippetServiceResponse.body.execution, 'execution');
+            assert.equal(socialVideoResponse.format, snippetServiceResponse.body.format, 'format');
+            assert.equal(socialVideoResponse.generated, snippetServiceResponse.body.generated, 'generated');
+            assert.equal(socialVideoResponse.id_alpha, snippetServiceResponse.body.id_alpha, 'alpha_id');
+            assert.equal(socialVideoResponse.is_rich_media, snippetServiceResponse.body.is_rich_media, 'is rich media');
+            assert.equal(socialVideoResponse.placement_type, snippetServiceResponse.body.placement_type, 'placement type');
+            assert.equal(socialVideoResponse.primary_click_tracker_id, snippetServiceResponse.body.primary_click_tracker_id, 'Primary click tracker');
+            assert.equal(socialVideoResponse.primary_impression_tracker_id, snippetServiceResponse.body.primary_impression_tracker_id, 'Primary impression tracker');
+            assert.equal(socialVideoResponse.version, snippetServiceResponse.body.version, 'version');
+            assert.equal(socialVideoResponse.uuid, snippetServiceResponse.body.uuid, 'uuid');
+            assert.equal(socialVideoResponse.deleted_at, snippetServiceResponse.body.deleted_at, 'deleted at');
+            assert.deepEqual(socialVideoResponse.trackers, snippetServiceResponse.body.trackers, 'Trackers object');
+          });
+        });
+      });
+    });
+
+    it('Test Snippet Service for ABA KIT Creative', () => {
+      let abaPayload;
+      let abaResponse;
+      cy.fixture('/Snippet-Service-Body-Json/ABA-KIT.json').then((payload) => {
+        abaPayload = extend(abaPayload, payload);
+
+        const snippetServiceRequest = requestOptions({
+          method: 'POST',
+          body: abaPayload,
+          url: 'https://ad-snippet-service.dev.kargo.com/api/snippet',
+        });
+
+        cy.request(snippetServiceRequest).then((snippetServiceResponse) => {
+          cy.fixture('/Snippet-Service-Response-Json/ABA-KIT.json').then((payload2) => {
+            abaResponse = extend(abaResponse, payload2);
+
+            assert.deepEqual(abaResponse.options, snippetServiceResponse.body.options, 'option object');
+            assert.deepEqual(abaResponse.config, snippetServiceResponse.body.config, 'config object');
+            assert.deepEqual(abaResponse.request_data, snippetServiceResponse.body.request_data, 'request data object');
+            assert.equal(abaResponse.id, snippetServiceResponse.body.id, 'id');
+            assert.equal(abaResponse.add_auto_trackers, snippetServiceResponse.body.add_auto_trackers, 'add auto trackers');
+            assert.equal(abaResponse.creative_id, snippetServiceResponse.body.creative_id, 'Creative id');
+            assert.equal(abaResponse.creative_origin, snippetServiceResponse.body.creative_origin, 'Creative Origin');
+            assert.equal(abaResponse.execution, snippetServiceResponse.body.execution, 'execution');
+            assert.equal(abaResponse.format, snippetServiceResponse.body.format, 'format');
+            assert.equal(abaResponse.generated, snippetServiceResponse.body.generated, 'generated');
+            assert.equal(abaResponse.id_alpha, snippetServiceResponse.body.id_alpha, 'alpha_id');
+            assert.equal(abaResponse.is_rich_media, snippetServiceResponse.body.is_rich_media, 'is rich media');
+            assert.equal(abaResponse.placement_type, snippetServiceResponse.body.placement_type, 'placement type');
+            assert.equal(abaResponse.primary_click_tracker_id, snippetServiceResponse.body.primary_click_tracker_id, 'Primary click tracker');
+            assert.equal(abaResponse.primary_impression_tracker_id, snippetServiceResponse.body.primary_impression_tracker_id, 'Primary impression tracker');
+            assert.equal(abaResponse.version, snippetServiceResponse.body.version, 'version');
+            assert.equal(abaResponse.uuid, snippetServiceResponse.body.uuid, 'uuid');
+            assert.equal(abaResponse.deleted_at, snippetServiceResponse.body.deleted_at, 'deleted at');
+            assert.deepEqual(abaResponse.trackers, snippetServiceResponse.body.trackers, 'Trackers object');
+          });
+        });
+      });
+    });
+
+    it('Test Snippet Service for Generic Native KIT Creative', () => {
+      let genericNativePayload;
+      let genericNativeResponse;
+      cy.fixture('/Snippet-Service-Body-Json/genericNative-KIT.json').then((payload) => {
+        genericNativePayload = extend(genericNativePayload, payload);
+
+        const snippetServiceRequest = requestOptions({
+          method: 'POST',
+          body: genericNativePayload,
+          url: 'https://ad-snippet-service.dev.kargo.com/api/snippet',
+        });
+
+        cy.request(snippetServiceRequest).then((snippetServiceResponse) => {
+          cy.fixture('/Snippet-Service-Response-Json/genericNative-KIT.json').then((payload2) => {
+            genericNativeResponse = extend(genericNativeResponse, payload2);
+
+            assert.deepEqual(genericNativeResponse.options, snippetServiceResponse.body.options, 'option object');
+            assert.deepEqual(genericNativeResponse.config, snippetServiceResponse.body.config, 'config object');
+            assert.deepEqual(genericNativeResponse.request_data, snippetServiceResponse.body.request_data, 'request data object');
+            assert.equal(genericNativeResponse.id, snippetServiceResponse.body.id, 'id');
+            assert.equal(genericNativeResponse.add_auto_trackers, snippetServiceResponse.body.add_auto_trackers, 'add auto trackers');
+            assert.equal(genericNativeResponse.creative_id, snippetServiceResponse.body.creative_id, 'Creative id');
+            assert.equal(genericNativeResponse.creative_origin, snippetServiceResponse.body.creative_origin, 'Creative Origin');
+            assert.equal(genericNativeResponse.execution, snippetServiceResponse.body.execution, 'execution');
+            assert.equal(genericNativeResponse.format, snippetServiceResponse.body.format, 'format');
+            assert.equal(genericNativeResponse.generated, snippetServiceResponse.body.generated, 'generated');
+            assert.equal(genericNativeResponse.id_alpha, snippetServiceResponse.body.id_alpha, 'alpha_id');
+            assert.equal(genericNativeResponse.is_rich_media, snippetServiceResponse.body.is_rich_media, 'is rich media');
+            assert.equal(genericNativeResponse.placement_type, snippetServiceResponse.body.placement_type, 'placement type');
+            assert.equal(genericNativeResponse.primary_click_tracker_id, snippetServiceResponse.body.primary_click_tracker_id, 'Primary click tracker');
+            assert.equal(genericNativeResponse.primary_impression_tracker_id, snippetServiceResponse.body.primary_impression_tracker_id, 'Primary impression tracker');
+            assert.equal(genericNativeResponse.version, snippetServiceResponse.body.version, 'version');
+            assert.equal(genericNativeResponse.uuid, snippetServiceResponse.body.uuid, 'uuid');
+            assert.equal(genericNativeResponse.deleted_at, snippetServiceResponse.body.deleted_at, 'deleted at');
+            assert.deepEqual(genericNativeResponse.trackers, snippetServiceResponse.body.trackers, 'Trackers object');
+          });
+        });
+      });
+    });
   });
 });
