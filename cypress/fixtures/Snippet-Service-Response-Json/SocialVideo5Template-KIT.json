@@ -1,0 +1,148 @@
+{
+    "options": {},
+    "config": {
+        "is_kit": true,
+        "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"\n(function(img) {\n  var Kargo = window.Kargo = window.Kargo || {};\n  var adTagValues = Kargo.PlatformMacros;\n  var macros = {};\n  if (adTagValues) {\n    for (var key in adTagValues) {\n      if (adTagValues.hasOwnProperty(key)) {\n        macros[key] = adTagValues[key];\n      }\n    }\n  }\n\n  var tag = {\n    anchorNode: img,\n    adTagMetadata: {\n      creative: macros.creative,\n      format: macros.format,\n      slot: macros.slot,\n      source: macros.source,\n      adTagVersion: macros.adTagVersion\n    },\n    debug: false,\n    templateId: 'social-video-5',\n    templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/social-video-5.min.js',\n    templateMacros: {\n      isTiktok: true,\n      logoImage: 'https://storage.cloud.kargo.com/ad/composer/1659548178251.jpeg',\n      videoSource: 'https://storage.cloud.kargo.com/ad/mos/videos/53b4c97be50ca2995fbb625557732dd5.mp4',\n      cta: '',\n      sponsoredBy: 'royal_flameofficial',\n      description: 'They last a liftime',\n      backgroundColor: '',\n      trackers: {\n        mainVideoClickThrough: '{{MAIN_CLICK}}',\n        socialIconClickThrough: '{{SOCIAL_CLICK}}',\n        callToActionClickThrough: '{{CTA_CLICK}}',\n        descriptionClickThrough: '{{DESCRIPTION_CLICK}}',\n        watchClickThrough: '{{WATCH_CLICK}}',\n        // the following impression trackers should be in array format\n        mainVideoImpression: '{{MAIN_IMPRESSION}}',\n        socialIconImpression: '{{SOCIAL_ICON_IMPRESSION}}',\n        callToActionImpression: '{{CTA_IMPRESSION}}',\n        descriptionImpression: '{{DESCRIPTION_IMPRESSION}}',\n        watchImpression: '{{WATCH_IMPRESSION}}',\n        quartileStart: '{{VIDEO_START}}',\n        quartileFirst: '{{VIDEO_Q1}}',\n        quartileMid: '{{VIDEO_MID}}',\n        quartileThird: '{{VIDEO_Q3}}',\n        quartileComplete: '{{VIDEO_COMPLETE}}',\n        unmute: '{{VIDEO_UNMUTE}}',\n        mute: '{{VIDEO_MUTE}}',\n        replay: '{{VIDEO_REPLAY}}',\n        viewabilityTrackers: ['']\n      }\n    },\n    clickMacros: [''],\n    moat: {\n      ids: macros.moatTag,\n      partnerCode: 'kargovideojstag'\n    }\n  };\n\n  var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {};\n  var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {};\n  var templates = AdPlatform.templates = AdPlatform.templates || {};\n  var template = templates[tag.templateId] = templates[tag.templateId] || {};\n\n  template.queue = template.queue || [];\n  template.queue.push(tag);\n\n  if (!template.script) {\n    template.script = document.createElement('script');\n    template.script.type = 'application/javascript';\n    template.script.src = tag.templateUrl;\n    img.parentNode.insertBefore(template.script, img);\n  }\n\n})(this);\n\"/>",
+        "clickUrl": null,
+        "isSocial": true,
+        "isVideo": true,
+        "composerCreativeId": 11662,
+        "isExternalTraffic": false,
+        "additional_impression_trackers": [],
+        "manualTrackers": {},
+        "clickZones": {
+            "main_image": {
+                "destination_url": "https://mashable.com",
+                "click_url": ""
+            },
+            "description": {
+                "destination_url": "https://mashable.com",
+                "click_url": "https://google.com"
+            },
+            "social_logo": {
+                "destination_url": "https://mashable.com",
+                "click_url": ""
+            },
+            "call_to_action": {
+                "destination_url": "https://mashable.com",
+                "click_url": ""
+            },
+            "watch_on_social": {
+                "destination_url": "https://hello.com",
+                "click_url": ""
+            }
+        }
+    },
+    "request_data": {
+        "format": "Venti",
+        "creative_id": "kit-social-video-5-test-1",
+        "is_rich_media": true,
+        "config": {
+            "is_kit": true,
+            "creative_html": "<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"\n(function(img) {\n  var Kargo = window.Kargo = window.Kargo || {};\n  var adTagValues = Kargo.PlatformMacros;\n  var macros = {};\n  if (adTagValues) {\n    for (var key in adTagValues) {\n      if (adTagValues.hasOwnProperty(key)) {\n        macros[key] = adTagValues[key];\n      }\n    }\n  }\n\n  var tag = {\n    anchorNode: img,\n    adTagMetadata: {\n      creative: macros.creative,\n      format: macros.format,\n      slot: macros.slot,\n      source: macros.source,\n      adTagVersion: macros.adTagVersion\n    },\n    debug: false,\n    templateId: 'social-video-5',\n    templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/social-video-5.min.js',\n    templateMacros: {\n      isTiktok: true,\n      logoImage: 'https://storage.cloud.kargo.com/ad/composer/1659548178251.jpeg',\n      videoSource: 'https://storage.cloud.kargo.com/ad/mos/videos/53b4c97be50ca2995fbb625557732dd5.mp4',\n      cta: '',\n      sponsoredBy: 'royal_flameofficial',\n      description: 'They last a liftime',\n      backgroundColor: '',\n      trackers: {\n        mainVideoClickThrough: '{{MAIN_CLICK}}',\n        socialIconClickThrough: '{{SOCIAL_CLICK}}',\n        callToActionClickThrough: '{{CTA_CLICK}}',\n        descriptionClickThrough: '{{DESCRIPTION_CLICK}}',\n        watchClickThrough: '{{WATCH_CLICK}}',\n        // the following impression trackers should be in array format\n        mainVideoImpression: '{{MAIN_IMPRESSION}}',\n        socialIconImpression: '{{SOCIAL_ICON_IMPRESSION}}',\n        callToActionImpression: '{{CTA_IMPRESSION}}',\n        descriptionImpression: '{{DESCRIPTION_IMPRESSION}}',\n        watchImpression: '{{WATCH_IMPRESSION}}',\n        quartileStart: '{{VIDEO_START}}',\n        quartileFirst: '{{VIDEO_Q1}}',\n        quartileMid: '{{VIDEO_MID}}',\n        quartileThird: '{{VIDEO_Q3}}',\n        quartileComplete: '{{VIDEO_COMPLETE}}',\n        unmute: '{{VIDEO_UNMUTE}}',\n        mute: '{{VIDEO_MUTE}}',\n        replay: '{{VIDEO_REPLAY}}',\n        viewabilityTrackers: ['']\n      }\n    },\n    clickMacros: [''],\n    moat: {\n      ids: macros.moatTag,\n      partnerCode: 'kargovideojstag'\n    }\n  };\n\n  var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {};\n  var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {};\n  var templates = AdPlatform.templates = AdPlatform.templates || {};\n  var template = templates[tag.templateId] = templates[tag.templateId] || {};\n\n  template.queue = template.queue || [];\n  template.queue.push(tag);\n\n  if (!template.script) {\n    template.script = document.createElement('script');\n    template.script.type = 'application/javascript';\n    template.script.src = tag.templateUrl;\n    img.parentNode.insertBefore(template.script, img);\n  }\n\n})(this);\n\"/>",
+            "clickUrl": null,
+            "isSocial": true,
+            "isVideo": true,
+            "composerCreativeId": 11662,
+            "isExternalTraffic": false,
+            "additional_impression_trackers": [],
+            "manualTrackers": {},
+            "clickZones": {
+                "main_image": {
+                    "destination_url": "https://mashable.com",
+                    "click_url": ""
+                },
+                "description": {
+                    "destination_url": "https://mashable.com",
+                    "click_url": "https://google.com"
+                },
+                "social_logo": {
+                    "destination_url": "https://mashable.com",
+                    "click_url": ""
+                },
+                "call_to_action": {
+                    "destination_url": "https://mashable.com",
+                    "click_url": ""
+                },
+                "watch_on_social": {
+                    "destination_url": "https://hello.com",
+                    "click_url": ""
+                }
+            }
+        },
+        "dsp": "",
+        "snippetId": "b3c18fb1-7766-42a4-92f2-39030dcbdf8a",
+        "creative_origin": "composer"
+    },
+    "id": 459121,
+    "add_auto_trackers": true,
+    "creative_id": "kit-social-video-5-test-1",
+    "creative_origin": "composer",
+    "execution": null,
+    "format": "Venti",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.66wtlkisx4pz?rand=%%CACHEBUSTER%%&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=composer&creative_id={CREATIVE_ID}&id_alpha=&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-kit-social-video-5-test-1\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/kit-social-video-5-test-1.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"kit-social-video-5-test-1\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJjb21wb3NlciIsImJyYW5kaW5nIjoia2FyZ28iLCJ0cmFja2luZyI6W10sImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": null,
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 168045,
+    "primary_impression_tracker_id": 168044,
+    "version": 1,
+    "uuid": "a5ccf116-a5d4-46dd-a75c-064d5cd50dac",
+    "created_at": "2023-07-25T21:20:59.000Z",
+    "updated_at": "2023-09-12T10:30:24.124Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 168043,
+            "tid": "test.cs-dev.impression-inside.66wtlkisx4py",
+            "is_auto_created": true,
+            "name": "Venti - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-07-25T21:20:59.000Z",
+            "updated_at": "2023-09-12T10:22:55.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 168044,
+            "tid": "test.cs-dev.impression.66wtlkisx4pz",
+            "is_auto_created": true,
+            "name": "Venti - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-07-25T21:20:59.000Z",
+            "updated_at": "2023-09-12T10:22:55.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 168045,
+            "tid": "test.cs-dev.click.66wtlkisx4q0",
+            "is_auto_created": true,
+            "name": "Venti - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-07-25T21:20:59.000Z",
+            "updated_at": "2023-09-12T10:22:55.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 168046,
+            "tid": "test.cs-dev.click.main-image.66wtlkisx4q1",
+            "is_auto_created": true,
+            "name": "Venti - Main Image",
+            "associated_field": "click.main-image",
+            "type": "impression",
+            "category": "click.main-image",
+            "url": "",
+            "created_at": "2023-07-25T21:20:59.000Z",
+            "updated_at": "2023-09-12T10:22:55.000Z",
+            "deleted_at": null
+        }
+    ]
+}

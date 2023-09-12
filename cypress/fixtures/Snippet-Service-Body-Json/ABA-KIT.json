@@ -1,0 +1,42 @@
+{
+    "format":"Venti",
+    "creative_id": "kit-aba-test-1",
+     "is_rich_media":true,
+    "config": {
+     "is_kit": true,
+     "creative_html":"<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"\n(function(img) {\n  var Kargo = window.Kargo = window.Kargo || {};\n  var adTagValues = Kargo.PlatformMacros;\n  var macros = {};\n  if (adTagValues) {\n    for (var key in adTagValues) {\n      if (adTagValues.hasOwnProperty(key)) {\n        macros[key] = adTagValues[key];\n      }\n    }\n  }\n\n  var tag = {\n    anchorNode: img,\n    adTagMetadata: {\n      creative: macros.creative,\n      format: macros.format,\n      slot: macros.slot,\n      source: macros.source,\n      adTagVersion: macros.adTagVersion\n    },\n    debug: false,\n    templateId: 'aba-video-1',\n    templateUrl: 'https://storage.cloud.kargo.com/ad/network/kap/templates/native/aba-video-1.min.js',\n    templateMacros: {\n      title: 'sarah,\n      logoImage: 'https://storage.cloud.kargo.com/ad/composer/1659548178251.jpeg',\n      videoSource: 'https://storage.cloud.kargo.com/ad/mos/videos/53b4c97be50ca2995fbb625557732dd5.mp4',\n      mainImage: 'https://storage.cloud.kargo.com/ad/composer/1659548178251.jpeg',\n      cta: '',\n      sponsoredBy: 'royal_flameofficial',\n      description: 'They last a liftime',\n      backgroundColor: '',\n      trackers: {\n        mainVideoClickThrough: '{{MAIN_CLICK}}',\n        socialIconClickThrough: '{{SOCIAL_CLICK}}',\n        callToActionClickThrough: '{{CTA_CLICK}}',\n        descriptionClickThrough: '{{DESCRIPTION_CLICK}}',\n        watchClickThrough: '{{WATCH_CLICK}}',\n        // the following impression trackers should be in array format\n        mainVideoImpression: '{{MAIN_IMPRESSION}}',\n        socialIconImpression: '{{SOCIAL_ICON_IMPRESSION}}',\n        callToActionImpression: '{{CTA_IMPRESSION}}',\n        descriptionImpression: '{{DESCRIPTION_IMPRESSION}}',\n        watchImpression: '{{WATCH_IMPRESSION}}',\n        quartileStart: '{{VIDEO_START}}',\n        quartileFirst: '{{VIDEO_Q1}}',\n        quartileMid: '{{VIDEO_MID}}',\n        quartileThird: '{{VIDEO_Q3}}',\n        quartileComplete: '{{VIDEO_COMPLETE}}',\n        unmute: '{{VIDEO_UNMUTE}}',\n        mute: '{{VIDEO_MUTE}}',\n        replay: '{{VIDEO_REPLAY}}',\n        viewabilityTrackers: ['']\n      }\n    },\n    clickMacros: [''],\n    moat: {\n      ids: macros.moatTag,\n      partnerCode: 'kargovideojstag'\n    }\n  };\n\n  var AdPlatform = Kargo.AdPlatform = Kargo.AdPlatform || {};\n  var versions = Kargo.AdPlatform.versions = Kargo.AdPlatform.versions || {};\n  var templates = AdPlatform.templates = AdPlatform.templates || {};\n  var template = templates[tag.templateId] = templates[tag.templateId] || {};\n\n  template.queue = template.queue || [];\n  template.queue.push(tag);\n\n  if (!template.script) {\n    template.script = document.createElement('script');\n    template.script.type = 'application/javascript';\n    template.script.src = tag.templateUrl;\n    img.parentNode.insertBefore(template.script, img);\n  }\n\n})(this);\n\"/>",
+    "clickUrl":null,
+    "isSocial":false,
+    "isVideo":true,
+    "composerCreativeId":11662,
+    "isExternalTraffic":false,
+    "additional_impression_trackers": [],
+    "manualTrackers":{},
+    "clickZones":{
+       "main_image":{
+          "destination_url":"https://mashable.com",
+          "click_url":"https://frog.com"
+       },
+       "description":{
+          "destination_url":"https://mashable.com",
+          "click_url":"https://google.com"
+       },
+       "social_logo":{
+          "destination_url":"https://mashable.com",
+          "click_url":""
+       },
+       "call_to_action":{
+          "destination_url":"https://mashable.com",
+          "click_url":""
+       },
+       "watch_on_social":{
+          "destination_url":"https://hello.com",
+          "click_url":""
+       }
+    }
+    },
+    "dsp":"",
+    "snippetId":"b3c18fb1-7766-42a4-92f2-39030dcbdf8a",
+    "creative_origin": "composer"
+ }
+ 

@@ -1,0 +1,42 @@
+{
+    "format":"Venti",
+    "creative_id": "generic-native-test",
+    "is_rich_media":true,
+    "config": {
+     "is_kit": true,
+     "creative_html":"<img src=\"data:platform,kargo\" style=\"display:none;\" onerror=\"\n(function(img) {\n  const nativeTemplateId = 'aba-display-2';\n  const jsonUrl = 'https:\/\/realtime.clinch.co\/nativeads?cid=rkv62Y&caid=23866&dsp=253&plcId=kargo_001&plc=452251&dsp_impression_id';\n  const nativeUrl = 'https:\/\/storage.cloud.kargo.com\/ad\/network\/tag\/ad-native.js';\n\n  const nativeScript = document.createElement('script');\n  nativeScript.type = 'application\/javascript';\n  nativeScript.src = nativeUrl;\n  const innerScript = document.createElement('script');\n  innerScript.type = 'application\/javascript';\n\n  img.parentNode.insertBefore(innerScript, img);\n  img.parentNode.insertBefore(nativeScript, img);\n\n  nativeScript.onload = function() {\n    fetch(jsonUrl, { method: 'GET' })\n    .then((response) => response.json())\n    .then((json) => {\n      const nativeJson = json;\n      nativeJson.creativeOptimizer = {\n        template_id: nativeTemplateId,\n        template_url: `https:\/\/storage.cloud.kargo.com\/ad\/network\/kap\/templates\/native\/${nativeTemplateId}.min.js`\n      };\n\n      let nativeAd = JSON.stringify(nativeJson);\n      try {\n        nativeAd = btoa(nativeAd);\n      } catch (e) {\n        console.error(e);\n      }\n\n      const innerHtml = '(function(ad) {new window.Kargo.Native(JSON.parse(atob(ad)))})(\\\\'' + nativeAd + '\\\\')';\n      innerScript.appendChild(document.createTextNode(innerHtml));\n    })\n    .catch((err) => {\n      console.error(err);\n    });\n  }\n})(this);\n\"/>",
+    "clickUrl":null,
+    "isSocial":true,
+    "isVideo":true,
+    "composerCreativeId":11662,
+    "isExternalTraffic":false,
+    "additional_impression_trackers": [],
+    "manualTrackers":{},
+    "clickZones":{
+       "main_image":{
+          "destination_url":"https://mashable.com",
+          "click_url":""
+       },
+       "description":{
+          "destination_url":"https://mashable.com",
+          "click_url":"https://google.com"
+       },
+       "social_logo":{
+          "destination_url":"https://mashable.com",
+          "click_url":""
+       },
+       "call_to_action":{
+          "destination_url":"https://mashable.com",
+          "click_url":""
+       },
+       "watch_on_social":{
+          "destination_url":"https://hello.com",
+          "click_url":""
+       }
+    }
+    },
+    "dsp":"",
+    "snippetId":"b3c18fb1-7766-42a4-92f2-39030dcbdf8a",
+    "creative_origin": "composer"
+ }
+ 
