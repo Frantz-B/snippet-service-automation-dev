@@ -1,0 +1,107 @@
+{
+    "options": [],
+    "config": {
+        "adserver": "kargo",
+        "add_ext_tracker_placed": false,
+        "prepend_dsp_url_macro": false,
+        "is_kit": false,
+        "additional_impression_trackers": [],
+        "additional_received_impression_trackers": [],
+        "ext_tracker_placed_options": {
+            "query_params": {
+                "payload_campaign_identifier": "deal-group-for-creative-automation_77785733",
+                "t_creative_type": "ANCHOR",
+                "t_exchange": "SSP",
+                "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                "t_publisher": "%%ADUNIT%%",
+                "t_site": "%%SITE%%"
+            }
+        },
+        "is_rich_media": true,
+        "has_kargo_branding": true,
+        "creative_html": "test Anchor Generator HTML"
+    },
+    "request_data": {
+        "creative_origin": "dm",
+        "name": "test Anchor Generator",
+        "placement_type": null,
+        "is_ad_builder": false,
+        "ad_builder_ad_id": null,
+        "add_auto_trackers": true,
+        "options": [],
+        "enable_download_impression_tracking": false,
+        "config": {
+            "adserver": "kargo",
+            "add_ext_tracker_placed": false,
+            "prepend_dsp_url_macro": false,
+            "is_kit": false,
+            "additional_impression_trackers": [],
+            "additional_received_impression_trackers": [],
+            "ext_tracker_placed_options": {
+                "query_params": {
+                    "payload_campaign_identifier": "deal-group-for-creative-automation_77785733",
+                    "t_creative_type": "ANCHOR",
+                    "t_exchange": "SSP",
+                    "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                    "t_publisher": "%%ADUNIT%%",
+                    "t_site": "%%SITE%%"
+                }
+            },
+            "is_rich_media": true,
+            "has_kargo_branding": true,
+            "creative_html": "test Anchor Generator HTML"
+        },
+        "trackers_config": [],
+        "creative_id": 77785733,
+        "id_alpha": "DM-CREA-77785733",
+        "is_rich_media": true,
+        "bidder_name": "23.10.01_04:45:00-API-Exchange-name",
+        "format": "Anchor",
+        "execution": "Generator"
+    },
+    "id": 462307,
+    "add_auto_trackers": true,
+    "creative_id": 77785733,
+    "creative_origin": "dm",
+    "execution": "Generator",
+    "format": "Anchor",
+    "generated": "test Anchor Generator HTML\n<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.33v6atln76ieq2?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&creative_id=77785733&id_alpha=DM-CREA-77785733&url=\" />\n<!--\n\"krg_ad_info\":{\n    \"creativeId\": 77785733,\n    \"format\": \"Anchor\",\n    \"creativeOrigin\": \"dm\",\n    \"idAlpha\": \"DM-CREA-77785733\",\n    \"execution\": \"generator\",\n    \"asdata\": {\n        \"sitid\": \"%esid!\",\n        \"advid\": \"%eadv!\",\n        \"camid\": \"%ebuy!\",\n        \"linid\": \"%eaid!\",\n        \"creid\": \"%ecid!\",\n        \"aduid\": \"%epid!\",\n        \"size\": {\n            \"w\": \"%%WIDTH%%\",\n            \"h\": \"%%HEIGHT%%\"\n        }\n    },\n    \"settings\": {\n        \"branding\": \"kargo\",\n        \"tracking\": [],\n        \"disable_hover_hiding\": false\n    }\n}\n-->",
+    "id_alpha": "DM-CREA-77785733",
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 195884,
+    "primary_impression_tracker_id": 195883,
+    "version": 1,
+    "uuid": "1c97d1ac-804f-42b4-9279-c7ef3a41d9ef",
+    "created_at": "2023-10-01T08:07:19.000Z",
+    "updated_at": "2023-10-01T08:09:39.252Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 195883,
+            "tid": "test.cs-dev.impression.33v6atln76ieq2",
+            "is_auto_created": true,
+            "name": "Anchor - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-01T08:07:19.000Z",
+            "updated_at": "2023-10-01T08:07:19.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 195884,
+            "tid": "test.cs-dev.click.33v6atln76ieq3",
+            "is_auto_created": true,
+            "name": "Anchor - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-01T08:07:19.000Z",
+            "updated_at": "2023-10-01T08:07:19.000Z",
+            "deleted_at": null
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+	"creative_origin":"DM",
+	"name":"test Hover Shootout",
+	"placement_type":null,
+	"is_ad_builder":false,
+	"ad_builder_ad_id":null,
+	"add_auto_trackers":true,
+	"options":[
+		
+	],
+	"enable_download_impression_tracking":false,
+	"config":{
+		"adserver":"kargo",
+		"add_ext_tracker_placed":false,
+		"prepend_dsp_url_macro":false,
+		"is_kit":true,
+		"additional_impression_trackers":[
+			
+		],
+		"additional_received_impression_trackers":[
+			
+		],
+		"ext_tracker_placed_options":{
+			"query_params":{
+				"payload_campaign_identifier":"deal-group-for-creative-automation-777785774",
+				"t_creative_type":"HOVER",
+				"t_exchange":"SSP",
+				"t_impression_size":"%%WIDTH%%x%%HEIGHT%%",
+				"t_publisher":"%%ADUNIT%%",
+				"t_site":"%%SITE%%"
+			}
+		},
+		"is_rich_media":true,
+		"has_kargo_branding":true,
+		"creative_html":"test Hover Shootout HTML",
+        "landing_page_url": "https://test.com"
+	},
+	"trackers_config":[
+		
+	],
+	"creative_id":77785774,
+	"id_alpha":"DM-CREA-77785774",
+	"is_rich_media":true,
+	"bidder_name":"23.10.01_04:45:00-API-Exchange-name",
+	"format":"Hover",
+	"execution":"Shootout"
+}

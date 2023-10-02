@@ -1,0 +1,57 @@
+{
+	"creative_origin":"composer",
+	"creative_id":"6158ee27-ec33-434e-8e91-ba3530ec0f2a",
+	"format":"Venti",
+	"execution":"Standard",
+	"id_alpha":"COM-CREA-10385",
+	"is_rich_media":true,
+	"placement_type":"standard",
+	"enable_download_impression_tracking":false,
+	"no_persist":true,
+	"options":{
+		"force":false
+	},
+	"config":{
+		"clickZones":{
+			"main_image":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"description":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"social_logo":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"call_to_action":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"watch_on_social":{
+				"destination_url":"",
+				"click_url":""
+			},
+			"carousel_trackers":[
+				
+			]
+		},
+		"manualTrackers":{
+			
+		},
+		"composer_creative_id":10385,
+		"is_social":true,
+		"is_video":false,
+		"is_kit":true,
+		"kit_test_trackers":false,
+		"use_ad_server":false,
+		"has_responsive_width":true,
+		"creative_html":"<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.crtuln8xl9fh?rand=${CACHEBUSTER}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=composer&creative_id=10385&id_alpha=COM-CREA-10385&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-6158ee27-ec33-434e-8e91-ba3530ec0f2a\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/6158ee27-ec33-434e-8e91-ba3530ec0f2a.js\"\n    data-click-url=\"${CLICK_URL}\"\n    data-creative-id=\"6158ee27-ec33-434e-8e91-ba3530ec0f2a\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-main-image=\"${CLICK_URL}https://kargo.com\"\n    data-description=\"${CLICK_URL}https://kargo.com\"\n    data-social-logo=\"${CLICK_URL}https://kargo.com\"\n    data-call-to-action=\"${CLICK_URL}https://kargo.com\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJjb21wb3NlciIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6ZmFsc2UsImlzX3NvY2lhbCI6dHJ1ZX0=\"\n    ></script>\n\n",
+		"additional_impression_trackers":[
+			
+		],
+		"click_url":null,
+		"adserver":"googledv360"
+	}
+}

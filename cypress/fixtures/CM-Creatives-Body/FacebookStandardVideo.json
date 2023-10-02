@@ -1,0 +1,64 @@
+{
+	"creative_origin":"composer",
+	"creative_id":"ffd927df-c916-4af9-aae8-292162eb0503",
+	"format":"Venti",
+	"execution":"Standard",
+	"id_alpha":"COM-CREA-10386",
+	"is_rich_media":true,
+	"placement_type":"standard",
+	"enable_download_impression_tracking":false,
+	"no_persist":true,
+	"options":{
+		"force":false
+	},
+	"config":{
+		"clickZones":{
+			"main_image":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"description":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"social_logo":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"call_to_action":{
+				"destination_url":"https://kargo.com?id-123&oid=[timestamp]",
+				"click_url":"https://kargo.com"
+			},
+			"watch_on_social":{
+				"destination_url":"",
+				"click_url":""
+			},
+			"carousel_trackers":[
+				
+			]
+		},
+		"manualTrackers":{
+			"tracking_start":"https://kargo.com",
+			"tracking_firstQuartile":"https://kargo.com",
+			"tracking_midpoint":"https://kargo.com",
+			"tracking_thirdQuartile":"https://kargo.com",
+			"tracking_complete":"https://kargo.com",
+			"tracking_unmute":"https://kargo.com",
+			"tracking_mute":"https://kargo.com",
+			"tracking_replay":"https://kargo.com"
+		},
+		"composer_creative_id":10386,
+		"is_social":true,
+		"is_video":true,
+		"is_kit":true,
+		"kit_test_trackers":false,
+		"use_ad_server":false,
+		"has_responsive_width":true,
+		"creative_html":"<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.cw7guln8xyo0v?rand=${CACHEBUSTER}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=composer&creative_id=10386&id_alpha=COM-CREA-10386&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-ffd927df-c916-4af9-aae8-292162eb0503\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/ffd927df-c916-4af9-aae8-292162eb0503.js\"\n    data-click-url=\"${CLICK_URL}\"\n    data-creative-id=\"ffd927df-c916-4af9-aae8-292162eb0503\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-tracking-start=\"https://kargo.com\"\n    data-tracking-firstQuartile=\"https://kargo.com\"\n    data-tracking-midpoint=\"https://kargo.com\"\n    data-tracking-thirdQuartile=\"https://kargo.com\"\n    data-tracking-complete=\"https://kargo.com\"\n    data-tracking-unmute=\"https://kargo.com\"\n    data-tracking-mute=\"https://kargo.com\"\n    data-tracking-replay=\"https://kargo.com\"\n    data-main-image=\"${CLICK_URL}https://kargo.com\"\n    data-description=\"${CLICK_URL}https://kargo.com\"\n    data-social-logo=\"${CLICK_URL}https://kargo.com\"\n    data-call-to-action=\"${CLICK_URL}https://kargo.com\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJjb21wb3NlciIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6dHJ1ZSwiaXNfc29jaWFsIjp0cnVlfQ==\"\n    ></script>\n\n",
+		"additional_impression_trackers":[
+			
+		],
+		"click_url":null,
+		"adserver":"xandr"
+	}
+}

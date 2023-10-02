@@ -1,0 +1,107 @@
+{
+    "options": [],
+    "config": {
+        "adserver": "kargo",
+        "add_ext_tracker_placed": false,
+        "prepend_dsp_url_macro": false,
+        "is_kit": false,
+        "additional_impression_trackers": [],
+        "additional_received_impression_trackers": [],
+        "ext_tracker_placed_options": {
+            "query_params": {
+                "payload_campaign_identifier": "deal-group-for-creative-automation_77785745",
+                "t_creative_type": "BILLBOARD",
+                "t_exchange": "SSP",
+                "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                "t_publisher": "%%ADUNIT%%",
+                "t_site": "%%SITE%%"
+            }
+        },
+        "is_rich_media": true,
+        "has_kargo_branding": true,
+        "creative_html": "test Billboard Standard HTML"
+    },
+    "request_data": {
+        "creative_origin": "dm",
+        "name": "test Billboard Standard",
+        "placement_type": null,
+        "is_ad_builder": false,
+        "ad_builder_ad_id": null,
+        "add_auto_trackers": true,
+        "options": [],
+        "enable_download_impression_tracking": false,
+        "config": {
+            "adserver": "kargo",
+            "add_ext_tracker_placed": false,
+            "prepend_dsp_url_macro": false,
+            "is_kit": false,
+            "additional_impression_trackers": [],
+            "additional_received_impression_trackers": [],
+            "ext_tracker_placed_options": {
+                "query_params": {
+                    "payload_campaign_identifier": "deal-group-for-creative-automation_77785745",
+                    "t_creative_type": "BILLBOARD",
+                    "t_exchange": "SSP",
+                    "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                    "t_publisher": "%%ADUNIT%%",
+                    "t_site": "%%SITE%%"
+                }
+            },
+            "is_rich_media": true,
+            "has_kargo_branding": true,
+            "creative_html": "test Billboard Standard HTML"
+        },
+        "trackers_config": [],
+        "creative_id": 77785745,
+        "id_alpha": "DM-CREA-77785745",
+        "is_rich_media": true,
+        "bidder_name": "23.10.01_04:45:00-API-Exchange-name",
+        "format": "Billboard",
+        "execution": "Standard"
+    },
+    "id": 462332,
+    "add_auto_trackers": true,
+    "creative_id": 77785745,
+    "creative_origin": "dm",
+    "execution": "Standard",
+    "format": "Billboard",
+    "generated": "test Billboard Standard HTML\n<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.33v6atln7aoai8?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&creative_id=77785745&id_alpha=DM-CREA-77785745&url=\" />\n<!--\n\"krg_ad_info\":{\n    \"creativeId\": 77785745,\n    \"format\": \"Billboard\",\n    \"creativeOrigin\": \"dm\",\n    \"idAlpha\": \"DM-CREA-77785745\",\n    \"execution\": \"standard\",\n    \"asdata\": {\n        \"sitid\": \"%esid!\",\n        \"advid\": \"%eadv!\",\n        \"camid\": \"%ebuy!\",\n        \"linid\": \"%eaid!\",\n        \"creid\": \"%ecid!\",\n        \"aduid\": \"%epid!\",\n        \"size\": {\n            \"w\": \"%%WIDTH%%\",\n            \"h\": \"%%HEIGHT%%\"\n        }\n    },\n    \"settings\": {\n        \"branding\": \"kargo\",\n        \"companion\": \"\",\n        \"socanCeltraFront\": \"\",\n        \"socanCeltraBack\": \"\",\n        \"tracking\": []\n    }\n}\n-->",
+    "id_alpha": "DM-CREA-77785745",
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 196080,
+    "primary_impression_tracker_id": 196079,
+    "version": 1,
+    "uuid": "af030337-dd18-4eaf-8064-f4a7828016d4",
+    "created_at": "2023-10-01T10:03:52.000Z",
+    "updated_at": "2023-10-01T10:07:41.855Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 196079,
+            "tid": "test.cs-dev.impression.33v6atln7aoai8",
+            "is_auto_created": true,
+            "name": "Billboard - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-01T10:03:52.000Z",
+            "updated_at": "2023-10-01T10:03:52.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 196080,
+            "tid": "test.cs-dev.click.33v6atln7aoai9",
+            "is_auto_created": true,
+            "name": "Billboard - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-01T10:03:52.000Z",
+            "updated_at": "2023-10-01T10:03:52.000Z",
+            "deleted_at": null
+        }
+    ]
+}

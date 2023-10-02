@@ -1,0 +1,14 @@
+{
+    "creative_origin": "video-tag-builder",
+    "format": "VastVideo",
+    "execution": "standard",
+    "options": {
+      "non_persist": true
+    },
+    "config": {
+      "video_length": 15,
+      "is_preroll": true,
+      "preroll_data": "{\"type\":\"inline\",\"vastUrl\":\"\",\"isVpaid\":false,\"creativeName\":\"Test Creative\",\"skipAfter\":null,\"clickThroughUrl\":\"https://kargo.com\",\"trackers\":{\"impression\":[],\"click\":[],\"tracking_start\":[],\"tracking_firstQuartile\":[],\"tracking_midpoint\":[],\"tracking_thirdQuartile\":[],\"tracking_complete\":[]},\"enablePrivacyPolicy\":true,\"simidOverlay\":{\"enabled\":false,\"name\":\"\",\"creativeHtml\":\"\",\"additionalImpTrackers\":[]},\"mainOverlay\":{\"enabled\":false,\"name\":\"\",\"creativeHtml\":\"\",\"additionalImpTrackers\":[]},\"videoData\":{\"s3Link\":\"https://storage.cloud.kargo.com/ad/mos/videos/4b92ea52c230405535a02e03a217a82e.mp4\",\"height\":300,\"width\":534,\"type\":\"video/mp4\",\"bitrate\":730,\"duration\":7.51}}"
+    }
+  }
+  

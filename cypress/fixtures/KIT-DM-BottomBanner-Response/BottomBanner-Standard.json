@@ -1,0 +1,122 @@
+{
+    "options": [],
+    "config": {
+        "adserver": "kargo",
+        "add_ext_tracker_placed": false,
+        "prepend_dsp_url_macro": false,
+        "is_kit": true,
+        "additional_impression_trackers": [],
+        "additional_received_impression_trackers": [],
+        "ext_tracker_placed_options": {
+            "query_params": {
+                "payload_campaign_identifier": "deal-group-for-creative-automation_77785747",
+                "t_creative_type": "BOTTOMBANNER",
+                "t_exchange": "SSP",
+                "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                "t_publisher": "%%ADUNIT%%",
+                "t_site": "%%SITE%%"
+            }
+        },
+        "is_rich_media": true,
+        "has_kargo_branding": true,
+        "creative_html": "test Bottom Banner Standard HTML",
+        "landing_page_url": "https://test.com"
+    },
+    "request_data": {
+        "creative_origin": "dm",
+        "name": "test Bottom Banner Standard",
+        "placement_type": null,
+        "is_ad_builder": false,
+        "ad_builder_ad_id": null,
+        "add_auto_trackers": true,
+        "options": [],
+        "enable_download_impression_tracking": false,
+        "config": {
+            "adserver": "kargo",
+            "add_ext_tracker_placed": false,
+            "prepend_dsp_url_macro": false,
+            "is_kit": true,
+            "additional_impression_trackers": [],
+            "additional_received_impression_trackers": [],
+            "ext_tracker_placed_options": {
+                "query_params": {
+                    "payload_campaign_identifier": "deal-group-for-creative-automation_77785747",
+                    "t_creative_type": "BOTTOMBANNER",
+                    "t_exchange": "SSP",
+                    "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                    "t_publisher": "%%ADUNIT%%",
+                    "t_site": "%%SITE%%"
+                }
+            },
+            "is_rich_media": true,
+            "has_kargo_branding": true,
+            "creative_html": "test Bottom Banner Standard HTML",
+            "landing_page_url": "https://test.com"
+        },
+        "trackers_config": [],
+        "creative_id": 77785747,
+        "id_alpha": "DM-CREA-77785747",
+        "is_rich_media": true,
+        "bidder_name": "23.10.01_04:45:00-API-Exchange-name",
+        "format": "BottomBanner",
+        "execution": "Standard"
+    },
+    "id": 462334,
+    "add_auto_trackers": true,
+    "creative_id": 77785747,
+    "creative_origin": "dm",
+    "execution": "Standard",
+    "format": "BottomBanner",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.33v6atln7buy5w?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&creative_id=77785747&id_alpha=DM-CREA-77785747&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-77785747\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/77785747.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"77785747\"\n    data-ad-format=\"BottomBanner\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJkbSIsImJyYW5kaW5nIjoia2FyZ28iLCJ0cmFja2luZyI6W10sImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": "DM-CREA-77785747",
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 196084,
+    "primary_impression_tracker_id": 196083,
+    "version": 1,
+    "uuid": "36334a4c-3b4c-41f0-9cb3-d092b928089e",
+    "created_at": "2023-10-01T10:37:02.000Z",
+    "updated_at": "2023-10-01T10:40:43.386Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 196083,
+            "tid": "test.cs-dev.impression.33v6atln7buy5w",
+            "is_auto_created": true,
+            "name": "BottomBanner - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-01T10:37:02.000Z",
+            "updated_at": "2023-10-01T10:37:02.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 196084,
+            "tid": "test.cs-dev.click.33v6atln7buy5x",
+            "is_auto_created": true,
+            "name": "BottomBanner - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-01T10:37:02.000Z",
+            "updated_at": "2023-10-01T10:37:02.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 196085,
+            "tid": "test.cs-dev.impression-inside.33v6atln7bxc1p",
+            "is_auto_created": true,
+            "name": "BottomBanner - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-10-01T10:38:54.000Z",
+            "updated_at": "2023-10-01T10:38:54.000Z",
+            "deleted_at": null
+        }
+    ]
+}

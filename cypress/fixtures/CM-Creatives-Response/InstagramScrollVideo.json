@@ -1,0 +1,403 @@
+{
+    "options": {
+        "force": false
+    },
+    "config": {
+        "clickZones": {
+            "main_image": {
+                "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                "click_url": "https://kargo.com"
+            },
+            "description": {
+                "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                "click_url": "https://kargo.com"
+            },
+            "social_logo": {
+                "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                "click_url": "https://kargo.com"
+            },
+            "call_to_action": {
+                "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                "click_url": "https://kargo.com"
+            },
+            "watch_on_social": {
+                "destination_url": "",
+                "click_url": ""
+            },
+            "carousel_trackers": []
+        },
+        "manualTrackers": {
+            "tracking_start": "https://kargo.com",
+            "tracking_firstQuartile": "https://kargo.com",
+            "tracking_midpoint": "https://kargo.com",
+            "tracking_thirdQuartile": "https://kargo.com",
+            "tracking_complete": "https://kargo.com",
+            "tracking_unmute": "https://kargo.com",
+            "tracking_mute": "https://kargo.com",
+            "tracking_replay": "https://kargo.com"
+        },
+        "composer_creative_id": 10383,
+        "is_social": true,
+        "is_video": true,
+        "is_kit": true,
+        "kit_test_trackers": false,
+        "use_ad_server": false,
+        "has_responsive_width": true,
+        "creative_html": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.crtuln8vypca?rand={CACHEBUSTER}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=composer&creative_id=10383&id_alpha=COM-CREA-10383&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-tracking-start=\"https://kargo.com\"\n    data-tracking-firstQuartile=\"https://kargo.com\"\n    data-tracking-midpoint=\"https://kargo.com\"\n    data-tracking-thirdQuartile=\"https://kargo.com\"\n    data-tracking-complete=\"https://kargo.com\"\n    data-tracking-unmute=\"https://kargo.com\"\n    data-tracking-mute=\"https://kargo.com\"\n    data-tracking-replay=\"https://kargo.com\"\n    data-main-image=\"https://kargo.com\"\n    data-description=\"https://kargo.com\"\n    data-social-logo=\"https://kargo.com\"\n    data-call-to-action=\"https://kargo.com\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJjb21wb3NlciIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6dHJ1ZSwiaXNfc29jaWFsIjp0cnVlfQ==\"\n    ></script>\n\n",
+        "additional_impression_trackers": [],
+        "click_url": null,
+        "adserver": ""
+    },
+    "request_data": {
+        "creative_origin": "composer",
+        "creative_id": "d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e",
+        "format": "Venti",
+        "execution": "Standard",
+        "id_alpha": "COM-CREA-10383",
+        "is_rich_media": true,
+        "placement_type": "standard",
+        "enable_download_impression_tracking": false,
+        "no_persist": true,
+        "options": {
+            "force": false
+        },
+        "config": {
+            "clickZones": {
+                "main_image": {
+                    "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                    "click_url": "https://kargo.com"
+                },
+                "description": {
+                    "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                    "click_url": "https://kargo.com"
+                },
+                "social_logo": {
+                    "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                    "click_url": "https://kargo.com"
+                },
+                "call_to_action": {
+                    "destination_url": "https://kargo.com?id-123&oid=[timestamp]",
+                    "click_url": "https://kargo.com"
+                },
+                "watch_on_social": {
+                    "destination_url": "",
+                    "click_url": ""
+                },
+                "carousel_trackers": []
+            },
+            "manualTrackers": {
+                "tracking_start": "https://kargo.com",
+                "tracking_firstQuartile": "https://kargo.com",
+                "tracking_midpoint": "https://kargo.com",
+                "tracking_thirdQuartile": "https://kargo.com",
+                "tracking_complete": "https://kargo.com",
+                "tracking_unmute": "https://kargo.com",
+                "tracking_mute": "https://kargo.com",
+                "tracking_replay": "https://kargo.com"
+            },
+            "composer_creative_id": 10383,
+            "is_social": true,
+            "is_video": true,
+            "is_kit": true,
+            "kit_test_trackers": false,
+            "use_ad_server": false,
+            "has_responsive_width": true,
+            "creative_html": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.crtuln8vypca?rand={CACHEBUSTER}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=composer&creative_id=10383&id_alpha=COM-CREA-10383&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-tracking-start=\"https://kargo.com\"\n    data-tracking-firstQuartile=\"https://kargo.com\"\n    data-tracking-midpoint=\"https://kargo.com\"\n    data-tracking-thirdQuartile=\"https://kargo.com\"\n    data-tracking-complete=\"https://kargo.com\"\n    data-tracking-unmute=\"https://kargo.com\"\n    data-tracking-mute=\"https://kargo.com\"\n    data-tracking-replay=\"https://kargo.com\"\n    data-main-image=\"https://kargo.com\"\n    data-description=\"https://kargo.com\"\n    data-social-logo=\"https://kargo.com\"\n    data-call-to-action=\"https://kargo.com\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJjb21wb3NlciIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6dHJ1ZSwiaXNfc29jaWFsIjp0cnVlfQ==\"\n    ></script>\n\n",
+            "additional_impression_trackers": [],
+            "click_url": null,
+            "adserver": ""
+        }
+    },
+    "id": 462464,
+    "add_auto_trackers": true,
+    "creative_id": "d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e",
+    "creative_origin": "composer",
+    "execution": "Standard",
+    "format": "Venti",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.crtuln8vypca?rand={CACHEBUSTER}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=composer&creative_id=10383&id_alpha=COM-CREA-10383&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"d7d853e8-5d6a-4ea3-b5af-ebcd61cf0f4e\"\n    data-ad-format=\"Venti\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Standard\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-tracking-start=\"https://kargo.com\"\n    data-tracking-firstQuartile=\"https://kargo.com\"\n    data-tracking-midpoint=\"https://kargo.com\"\n    data-tracking-thirdQuartile=\"https://kargo.com\"\n    data-tracking-complete=\"https://kargo.com\"\n    data-tracking-unmute=\"https://kargo.com\"\n    data-tracking-mute=\"https://kargo.com\"\n    data-tracking-replay=\"https://kargo.com\"\n    data-main-image=\"https://kargo.com\"\n    data-description=\"https://kargo.com\"\n    data-social-logo=\"https://kargo.com\"\n    data-call-to-action=\"https://kargo.com\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJjb21wb3NlciIsImJyYW5kaW5nIjoia2FyZ28iLCJoYXNfcmVzcG9uc2l2ZV93aWR0aCI6dHJ1ZSwidHJhY2tpbmciOltdLCJpc192aWRlbyI6dHJ1ZSwiaXNfc29jaWFsIjp0cnVlfQ==\"\n    ></script>\n\n",
+    "id_alpha": "COM-CREA-10383",
+    "is_rich_media": true,
+    "placement_type": "standard",
+    "primary_click_tracker_id": 197017,
+    "primary_impression_tracker_id": 197016,
+    "version": 1,
+    "uuid": "56f47eb2-2119-4878-895d-4705575f4dbf",
+    "created_at": "2023-10-02T12:47:36.000Z",
+    "updated_at": "2023-10-02T12:51:28.083Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 197015,
+            "tid": "test.cs-dev.impression-inside.crtuln8vypc9",
+            "is_auto_created": true,
+            "name": "Venti - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197016,
+            "tid": "test.cs-dev.impression.crtuln8vypca",
+            "is_auto_created": true,
+            "name": "Venti - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197017,
+            "tid": "test.cs-dev.click.crtuln8vypcb",
+            "is_auto_created": true,
+            "name": "Venti - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197018,
+            "tid": "test.cs-dev.video-start.crtuln8vypcc",
+            "is_auto_created": true,
+            "name": "Venti - Start",
+            "associated_field": "tracking_start",
+            "type": "impression",
+            "category": "video_start",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197019,
+            "tid": "test.cs-dev.video-q1.crtuln8vypcd",
+            "is_auto_created": true,
+            "name": "Venti - First Quartile",
+            "associated_field": "tracking_firstQuartile",
+            "type": "impression",
+            "category": "video_q1",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197020,
+            "tid": "test.cs-dev.video-q2.crtuln8vypce",
+            "is_auto_created": true,
+            "name": "Venti - Midpoint",
+            "associated_field": "tracking_midpoint",
+            "type": "impression",
+            "category": "video_q2",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197021,
+            "tid": "test.cs-dev.video-q3.crtuln8vypcf",
+            "is_auto_created": true,
+            "name": "Venti - Third Quartile",
+            "associated_field": "tracking_thirdQuartile",
+            "type": "impression",
+            "category": "video_q3",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197022,
+            "tid": "test.cs-dev.video-complete.crtuln8vypcg",
+            "is_auto_created": true,
+            "name": "Venti - Complete",
+            "associated_field": "tracking_complete",
+            "type": "impression",
+            "category": "video_complete",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197023,
+            "tid": "test.cs-dev.mute.crtuln8vypch",
+            "is_auto_created": true,
+            "name": "Venti - Mute",
+            "associated_field": "tracking_mute",
+            "type": "impression",
+            "category": "mute",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197024,
+            "tid": "test.cs-dev.unmute.crtuln8vypci",
+            "is_auto_created": true,
+            "name": "Venti - Un-Mute",
+            "associated_field": "tracking_unmute",
+            "type": "impression",
+            "category": "unmute",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197025,
+            "tid": "test.cs-dev.replay.crtuln8vypcj",
+            "is_auto_created": true,
+            "name": "Venti - Replay",
+            "associated_field": "tracking_replay",
+            "type": "impression",
+            "category": "replay",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197026,
+            "tid": "test.cs-dev.click.main-image.crtuln8vypck",
+            "is_auto_created": true,
+            "name": "Venti - Main Image",
+            "associated_field": "click.main-image",
+            "type": "impression",
+            "category": "click.main-image",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197027,
+            "tid": "test.cs-dev.click.description.crtuln8vypcl",
+            "is_auto_created": true,
+            "name": "Venti - Description",
+            "associated_field": "click.description",
+            "type": "impression",
+            "category": "click.description",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197028,
+            "tid": "test.cs-dev.click.social-logo.crtuln8vypcm",
+            "is_auto_created": true,
+            "name": "Venti - Social Logo",
+            "associated_field": "click.social-logo",
+            "type": "impression",
+            "category": "click.social-logo",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197029,
+            "tid": "test.cs-dev.click.logo.crtuln8vypcn",
+            "is_auto_created": true,
+            "name": "Venti - Logo",
+            "associated_field": "click.logo",
+            "type": "impression",
+            "category": "click.logo",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197030,
+            "tid": "test.cs-dev.click.call-to-action.crtuln8vypco",
+            "is_auto_created": true,
+            "name": "Venti - Call To Action",
+            "associated_field": "click.call-to-action",
+            "type": "impression",
+            "category": "click.call-to-action",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197031,
+            "tid": "test.cs-dev.click.carousel_trackers_0.crtuln8vypcp",
+            "is_auto_created": true,
+            "name": "Venti - Carousel Tracker 0",
+            "associated_field": "click.carousel_trackers_0",
+            "type": "impression",
+            "category": "click.carousel_trackers_0",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197032,
+            "tid": "test.cs-dev.click.carousel_trackers_1.crtuln8vypcq",
+            "is_auto_created": true,
+            "name": "Venti - Carousel Tracker 1",
+            "associated_field": "click.carousel_trackers_1",
+            "type": "impression",
+            "category": "click.carousel_trackers_1",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197033,
+            "tid": "test.cs-dev.click.carousel_trackers_2.crtuln8vypcr",
+            "is_auto_created": true,
+            "name": "Venti - Carousel Tracker 2",
+            "associated_field": "click.carousel_trackers_2",
+            "type": "impression",
+            "category": "click.carousel_trackers_2",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197034,
+            "tid": "test.cs-dev.click.carousel_trackers_3.crtuln8vypcs",
+            "is_auto_created": true,
+            "name": "Venti - Carousel Tracker 3",
+            "associated_field": "click.carousel_trackers_3",
+            "type": "impression",
+            "category": "click.carousel_trackers_3",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 197035,
+            "tid": "test.cs-dev.click.carousel_trackers_4.crtuln8vypct",
+            "is_auto_created": true,
+            "name": "Venti - Carousel Tracker 4",
+            "associated_field": "click.carousel_trackers_4",
+            "type": "impression",
+            "category": "click.carousel_trackers_4",
+            "url": "",
+            "created_at": "2023-10-02T12:47:36.000Z",
+            "updated_at": "2023-10-02T12:47:36.000Z",
+            "deleted_at": null
+        }
+    ]
+}

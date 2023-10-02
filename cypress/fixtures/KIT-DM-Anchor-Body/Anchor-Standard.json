@@ -1,0 +1,46 @@
+{
+	"creative_origin":"DM",
+	"name":"test Anchor Standard",
+	"placement_type":null,
+	"is_ad_builder":false,
+	"ad_builder_ad_id":null,
+	"add_auto_trackers":true,
+	"options":[
+		
+	],
+	"enable_download_impression_tracking":false,
+	"config":{
+		"adserver":"kargo",
+		"add_ext_tracker_placed":false,
+		"prepend_dsp_url_macro":false,
+		"is_kit":false,
+		"additional_impression_trackers":[
+			
+		],
+		"additional_received_impression_trackers":[
+			
+		],
+		"ext_tracker_placed_options":{
+			"query_params":{
+				"payload_campaign_identifier":"deal-group-for-creative-automation_77785740",
+				"t_creative_type":"ANCHOR",
+				"t_exchange":"SSP",
+				"t_impression_size":"%%WIDTH%%x%%HEIGHT%%",
+				"t_publisher":"%%ADUNIT%%",
+				"t_site":"%%SITE%%"
+			}
+		},
+		"is_rich_media":true,
+		"has_kargo_branding":true,
+		"creative_html":"test Anchor standard HTML"
+	},
+	"trackers_config":[
+		
+	],
+	"creative_id":77785740,
+	"id_alpha":"DM-CREA-77785740",
+	"is_rich_media":true,
+	"bidder_name":"23.10.01_04:45:00-API-Exchange-name",
+	"format":"Anchor",
+	"execution":"Standard"
+}

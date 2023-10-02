@@ -1,0 +1,122 @@
+{
+    "options": [],
+    "config": {
+        "adserver": "kargo",
+        "add_ext_tracker_placed": false,
+        "prepend_dsp_url_macro": false,
+        "is_kit": true,
+        "additional_impression_trackers": [],
+        "additional_received_impression_trackers": [],
+        "ext_tracker_placed_options": {
+            "query_params": {
+                "payload_campaign_identifier": "deal-group-for-creative-automation-77785799",
+                "t_creative_type": "MIDDLEBANNER",
+                "t_exchange": "SSP",
+                "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                "t_publisher": "%%ADUNIT%%",
+                "t_site": "%%SITE%%"
+            }
+        },
+        "is_rich_media": true,
+        "has_kargo_branding": true,
+        "creative_html": "test Middle Banner Video RM HTML",
+        "landing_page_url": "https://test.com"
+    },
+    "request_data": {
+        "creative_origin": "dm",
+        "name": "test Middle Banner Video RM",
+        "placement_type": null,
+        "is_ad_builder": false,
+        "ad_builder_ad_id": null,
+        "add_auto_trackers": true,
+        "options": [],
+        "enable_download_impression_tracking": false,
+        "config": {
+            "adserver": "kargo",
+            "add_ext_tracker_placed": false,
+            "prepend_dsp_url_macro": false,
+            "is_kit": true,
+            "additional_impression_trackers": [],
+            "additional_received_impression_trackers": [],
+            "ext_tracker_placed_options": {
+                "query_params": {
+                    "payload_campaign_identifier": "deal-group-for-creative-automation-77785799",
+                    "t_creative_type": "MIDDLEBANNER",
+                    "t_exchange": "SSP",
+                    "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                    "t_publisher": "%%ADUNIT%%",
+                    "t_site": "%%SITE%%"
+                }
+            },
+            "is_rich_media": true,
+            "has_kargo_branding": true,
+            "creative_html": "test Middle Banner Video RM HTML",
+            "landing_page_url": "https://test.com"
+        },
+        "trackers_config": [],
+        "creative_id": 77785799,
+        "id_alpha": "DM-CREA-77785799",
+        "is_rich_media": true,
+        "bidder_name": "23.10.01_04:45:00-API-Exchange-name",
+        "format": "MiddleBanner",
+        "execution": "Video RM"
+    },
+    "id": 462402,
+    "add_auto_trackers": true,
+    "creative_id": 77785799,
+    "creative_origin": "dm",
+    "execution": "Video RM",
+    "format": "MiddleBanner",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.jxdu3tln7nryqy?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&creative_id=77785799&id_alpha=DM-CREA-77785799&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-77785799\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/77785799.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"77785799\"\n    data-ad-format=\"MiddleBanner\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"Video RM\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJkbSIsImJyYW5kaW5nIjoia2FyZ28iLCJ0cmFja2luZyI6W10sImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": "DM-CREA-77785799",
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 196545,
+    "primary_impression_tracker_id": 196544,
+    "version": 1,
+    "uuid": "fec8c717-f677-4de5-ae59-4688ad6561db",
+    "created_at": "2023-10-01T16:10:38.000Z",
+    "updated_at": "2023-10-01T16:12:03.400Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 196544,
+            "tid": "test.cs-dev.impression.jxdu3tln7nryqy",
+            "is_auto_created": true,
+            "name": "MiddleBanner - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-01T16:10:38.000Z",
+            "updated_at": "2023-10-01T16:10:38.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 196545,
+            "tid": "test.cs-dev.click.jxdu3tln7nryqz",
+            "is_auto_created": true,
+            "name": "MiddleBanner - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-01T16:10:38.000Z",
+            "updated_at": "2023-10-01T16:10:38.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 196546,
+            "tid": "test.cs-dev.impression-inside.jxdu3tln7nswe2",
+            "is_auto_created": true,
+            "name": "MiddleBanner - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-10-01T16:11:22.000Z",
+            "updated_at": "2023-10-01T16:11:22.000Z",
+            "deleted_at": null
+        }
+    ]
+}
