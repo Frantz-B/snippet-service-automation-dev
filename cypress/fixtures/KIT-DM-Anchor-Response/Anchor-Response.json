@@ -1,0 +1,107 @@
+{
+    "options": {},
+    "config": {
+        "adserver": "kargo",
+        "add_ext_tracker_placed": false,
+        "prepend_dsp_url_macro": false,
+        "is_kit": false,
+        "additional_impression_trackers": [],
+        "additional_received_impression_trackers": [],
+        "ext_tracker_placed_options": {
+            "query_params": {
+                "payload_campaign_identifier": "String - will be changed",
+                "t_creative_type": "ANCHOR",
+                "t_exchange": "SSP",
+                "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                "t_publisher": "%%ADUNIT%%",
+                "t_site": "%%SITE%%"
+            }
+        },
+        "is_rich_media": true,
+        "has_kargo_branding": true,
+        "creative_html": "test Anchor HTML"
+    },
+    "request_data": {
+        "creative_origin": "dm",
+        "name": "String - will be changed",
+        "placement_type": null,
+        "is_ad_builder": false,
+        "ad_builder_ad_id": null,
+        "add_auto_trackers": true,
+        "options": [],
+        "enable_download_impression_tracking": false,
+        "config": {
+            "adserver": "kargo",
+            "add_ext_tracker_placed": false,
+            "prepend_dsp_url_macro": false,
+            "is_kit": false,
+            "additional_impression_trackers": [],
+            "additional_received_impression_trackers": [],
+            "ext_tracker_placed_options": {
+                "query_params": {
+                    "payload_campaign_identifier": "String - will be changed",
+                    "t_creative_type": "ANCHOR",
+                    "t_exchange": "SSP",
+                    "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                    "t_publisher": "%%ADUNIT%%",
+                    "t_site": "%%SITE%%"
+                }
+            },
+            "is_rich_media": true,
+            "has_kargo_branding": true,
+            "creative_html": "test Anchor HTML"
+        },
+        "trackers_config": [],
+        "creative_id": "id - will be changed",
+        "id_alpha": "id - will be changed",
+        "is_rich_media": true,
+        "bidder_name": "23.10.01_04:45:00-API-Exchange-name",
+        "format": "Anchor",
+        "execution": "String - will be changed"
+    },
+    "id": 462684,
+    "add_auto_trackers": true,
+    "creative_id": "id - will be changed",
+    "creative_origin": "dm",
+    "execution": "String - will be changed",
+    "format": "Anchor",
+    "generated": "test Anchor HTML\n<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.crtulnh9p7v9?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&creative_id=id - will be changed&id_alpha=id - will be changed&url=\" />\n<!--\n\"krg_ad_info\":{\n    \"creativeId\": \"id - will be changed\",\n    \"format\": \"Anchor\",\n    \"creativeOrigin\": \"dm\",\n    \"idAlpha\": \"id - will be changed\",\n    \"execution\": \"string-will-be-changed\",\n    \"asdata\": {\n        \"sitid\": \"%esid!\",\n        \"advid\": \"%eadv!\",\n        \"camid\": \"%ebuy!\",\n        \"linid\": \"%eaid!\",\n        \"creid\": \"%ecid!\",\n        \"aduid\": \"%epid!\",\n        \"size\": {\n            \"w\": \"%%WIDTH%%\",\n            \"h\": \"%%HEIGHT%%\"\n        }\n    },\n    \"settings\": {\n        \"branding\": \"kargo\",\n        \"tracking\": [],\n        \"disable_hover_hiding\": false\n    }\n}\n-->",
+    "id_alpha": "id - will be changed",
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 199363,
+    "primary_impression_tracker_id": 199362,
+    "version": 1,
+    "uuid": "f51fc810-ab5f-4cf4-bfa3-e49aaf07807e",
+    "created_at": "2023-10-08T09:34:17.000Z",
+    "updated_at": "2023-10-12T12:50:10.230Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 199362,
+            "tid": "test.cs-dev.impression.crtulnh9p7v9",
+            "is_auto_created": true,
+            "name": "Anchor - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-08T09:34:17.000Z",
+            "updated_at": "2023-10-08T09:34:17.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 199363,
+            "tid": "test.cs-dev.click.crtulnh9p7va",
+            "is_auto_created": true,
+            "name": "Anchor - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-08T09:34:17.000Z",
+            "updated_at": "2023-10-08T09:34:17.000Z",
+            "deleted_at": null
+        }
+    ]
+}
