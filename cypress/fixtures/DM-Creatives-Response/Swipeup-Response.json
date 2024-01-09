@@ -1,0 +1,122 @@
+{
+    "options": {},
+    "config": {
+        "adserver": "kargo",
+        "add_ext_tracker_placed": false,
+        "prepend_dsp_url_macro": false,
+        "is_kit": true,
+        "additional_impression_trackers": [],
+        "additional_received_impression_trackers": [],
+        "ext_tracker_placed_options": {
+            "query_params": {
+                "payload_campaign_identifier": "String - will be changed",
+                "t_creative_type": "SWIPEUP",
+                "t_exchange": "SSP",
+                "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                "t_publisher": "%%ADUNIT%%",
+                "t_site": "%%SITE%%"
+            }
+        },
+        "is_rich_media": true,
+        "has_kargo_branding": true,
+        "creative_html": "Test SwipeUp HTML",
+        "landing_page_url": "https://test.com"
+    },
+    "request_data": {
+        "creative_origin": "dm",
+        "name": "String - will be changed",
+        "placement_type": null,
+        "is_ad_builder": false,
+        "ad_builder_ad_id": null,
+        "add_auto_trackers": true,
+        "options": [],
+        "enable_download_impression_tracking": false,
+        "config": {
+            "adserver": "kargo",
+            "add_ext_tracker_placed": false,
+            "prepend_dsp_url_macro": false,
+            "is_kit": true,
+            "additional_impression_trackers": [],
+            "additional_received_impression_trackers": [],
+            "ext_tracker_placed_options": {
+                "query_params": {
+                    "payload_campaign_identifier": "String - will be changed",
+                    "t_creative_type": "SWIPEUP",
+                    "t_exchange": "SSP",
+                    "t_impression_size": "%%WIDTH%%x%%HEIGHT%%",
+                    "t_publisher": "%%ADUNIT%%",
+                    "t_site": "%%SITE%%"
+                }
+            },
+            "is_rich_media": true,
+            "has_kargo_branding": true,
+            "creative_html": "Test SwipeUp HTML",
+            "landing_page_url": "https://test.com"
+        },
+        "trackers_config": [],
+        "creative_id": "id - will be changed",
+        "id_alpha": "id - will be changed",
+        "is_rich_media": true,
+        "bidder_name": "23.10.01_04:45:00-API-Exchange-name",
+        "format": "SwipeUp",
+        "execution": "String - will be changed"
+    },
+    "id": 463424,
+    "add_auto_trackers": true,
+    "creative_id": "id - will be changed",
+    "creative_origin": "dm",
+    "execution": "String - will be changed",
+    "format": "SwipeUp",
+    "generated": "<img width=\"1\" height=\"1\" alt=\"\" style=\"position: absolute; left: -9999px;\" src=\"https://tk.kargo.com/t/test.cs-dev.impression.y5mtptlo41esoj?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&creative_id=id - will be changed&id_alpha=id - will be changed&url=\" /> \n \n\n<script\n    kit-version=\"v1.2.0\"\n    id=\"kit-client-id - will be changed\"\n    type=\"text/javascript\"\n    src=\"https://s3.amazonaws.com/storage.kargo.com/ad/creative/id - will be changed.js\"\n    data-click-url=\"%%CLICK_URL%%\"\n    data-creative-id=\"id - will be changed\"\n    data-ad-format=\"SwipeUp\"\n    data-ad-slot=\"{AD_SLOT}\"\n    data-ad-execution=\"String - will be changed\"\n    data-uuid=\"%%PATTERN:uuid%%\"\n    data-ad-settings=\"eyJjcmVhdGl2ZV9vcmlnaW4iOiJkbSIsImJyYW5kaW5nIjoia2FyZ28iLCJlbmFibGVfbWVzc2FnaW5nIjp0cnVlLCJ0cmFja2luZyI6eyJzd2lwZV90b19leHBhbmQiOm51bGwsImNsaWNrX3RvX2V4cGFuZCI6bnVsbH0sIndyYXBwZXJfZmlsbCI6ZmFsc2UsImlzX3ZpZGVvIjpmYWxzZSwiaXNfc29jaWFsIjpmYWxzZX0=\"\n    ></script>\n\n",
+    "id_alpha": "id - will be changed",
+    "is_rich_media": true,
+    "placement_type": null,
+    "primary_click_tracker_id": 207280,
+    "primary_impression_tracker_id": 207279,
+    "version": 1,
+    "uuid": "a974befb-556a-4a7f-aeba-3e621a8d67d7",
+    "created_at": "2023-10-24T08:00:56.000Z",
+    "updated_at": "2023-10-24T08:00:56.000Z",
+    "deleted_at": null,
+    "trackers": [
+        {
+            "id": 207278,
+            "tid": "test.cs-dev.impression-inside.y5mtptlo41esoi",
+            "is_auto_created": true,
+            "name": "SwipeUp - Impression",
+            "associated_field": "impression-inside",
+            "type": "impression",
+            "category": "impression-inside",
+            "url": "",
+            "created_at": "2023-10-24T08:00:56.000Z",
+            "updated_at": "2023-10-24T08:00:56.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 207279,
+            "tid": "test.cs-dev.impression.y5mtptlo41esoj",
+            "is_auto_created": true,
+            "name": "SwipeUp - Impression",
+            "associated_field": "default_impression",
+            "type": "impression",
+            "category": "impression",
+            "url": "",
+            "created_at": "2023-10-24T08:00:56.000Z",
+            "updated_at": "2023-10-24T08:00:56.000Z",
+            "deleted_at": null
+        },
+        {
+            "id": 207280,
+            "tid": "test.cs-dev.click.y5mtptlo41esok",
+            "is_auto_created": true,
+            "name": "SwipeUp - Click",
+            "associated_field": "default_click",
+            "type": "click",
+            "category": "click",
+            "url": "",
+            "created_at": "2023-10-24T08:00:56.000Z",
+            "updated_at": "2023-10-24T08:00:56.000Z",
+            "deleted_at": null
+        }
+    ]
+}

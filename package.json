@@ -12,7 +12,9 @@
     "ui": "cypress open",
     "lint": "eslint .",
     "test:api": "cypress run --spec 'cypress/integration/api/**/*'",
-    "test": "cypress run"
+    "test": "cypress run",
+    "cy:open:stg": "cypress open  --config baseUrl='https://ad-snippet-service.staging.kargo.com/api/snippet'",
+    "cy:run:stg": "cypress run  --config baseUrl='https://ad-snippet-service.staging.kargo.com/api/snippet'"
   },
   "dependencies": {
     "cypress": "^5.4.0",

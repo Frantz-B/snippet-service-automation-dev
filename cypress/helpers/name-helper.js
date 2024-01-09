@@ -27,6 +27,11 @@ exports.getGeneratedExecution = (string) => {
   return generatedExecution;
 };
 
+exports.getGeneratedCampaignIdentifier = (string) => {
+  const generatedCampaignIdentifier = `deal-group-for-creative-automation_${string}`;
+  return generatedCampaignIdentifier;
+};
+
 exports.replaceCampaignIdentifier = (string, name) => {
   const campaignIdentifierName = string.replaceAll('"payload_campaign_identifier":"String - will be changed"', `"payload_campaign_identifier":"${name}"`);
   return campaignIdentifierName;
