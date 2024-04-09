@@ -12,6 +12,13 @@ context('Snippet-Service API Test', () => {
   describe('Snippet-Service API Test For DM Middle Banner KIT Creatives', () => {
     const executionList = ['Animated', 'Explorer', 'Formation', 'Instant Native', 'NBDB', 'Polling', 'Slide To Reveal', 'Standard', 'Tiles', 'Video RM', 'Viewstream', 'Wipe Away', 'Store Locator'];
     const url = Cypress.config().baseUrl; // accesing baseUrl
+    let trackerLink;
+    // We need to check if url is STG or dev to see select the value of trackers
+    if (url.includes('dev') === true) {
+      trackerLink = 'test.cs-dev';
+    } else if (url.includes('staging') === true) {
+      trackerLink = 'test.cs-staging';
+    }
 
     it('Test Snippet Service for Middle Banner Animated Creative', () => {
       let middleBannerPayload;
@@ -58,8 +65,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -79,7 +86,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -88,7 +95,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -97,7 +104,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -155,8 +162,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -176,7 +183,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -185,7 +192,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -194,7 +201,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -252,8 +259,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -273,7 +280,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -282,7 +289,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -291,7 +298,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -349,8 +356,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -370,7 +377,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -379,7 +386,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -388,7 +395,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -446,8 +453,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -467,7 +474,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -476,7 +483,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -485,7 +492,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -543,8 +550,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -564,7 +571,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -573,7 +580,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -582,7 +589,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -640,8 +647,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -661,7 +668,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -670,7 +677,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -679,7 +686,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -737,8 +744,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -758,7 +765,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -767,7 +774,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -776,7 +783,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -834,8 +841,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -855,7 +862,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -864,7 +871,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -873,7 +880,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -931,8 +938,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -952,7 +959,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -961,7 +968,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -970,7 +977,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -1028,8 +1035,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -1049,7 +1056,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -1058,7 +1065,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -1067,7 +1074,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -1078,7 +1085,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[3].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[3].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[3].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[3].tid, 'test.cs-dev.video-start', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[3].tid, `${trackerLink}.video-start`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[3].is_auto_created, middleBannerResponse.trackers[3].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[3].name, middleBannerResponse.trackers[3].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[3].associated_field, middleBannerResponse.trackers[3].associated_field, 'Trackers object');
@@ -1089,7 +1096,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[4].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[4].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[4].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[4].tid, 'test.cs-dev.video-q1', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[4].tid, `${trackerLink}.video-q1`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[4].is_auto_created, middleBannerResponse.trackers[4].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[4].name, middleBannerResponse.trackers[4].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[4].associated_field, middleBannerResponse.trackers[4].associated_field, 'Trackers object');
@@ -1100,7 +1107,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[5].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[5].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[5].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[5].tid, 'test.cs-dev.video-q2', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[5].tid, `${trackerLink}.video-q2`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[5].is_auto_created, middleBannerResponse.trackers[5].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[5].name, middleBannerResponse.trackers[5].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[5].associated_field, middleBannerResponse.trackers[5].associated_field, 'Trackers object');
@@ -1111,7 +1118,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[6].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[6].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[6].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[6].tid, 'test.cs-dev.video-q3', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[6].tid, `${trackerLink}.video-q3`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[6].is_auto_created, middleBannerResponse.trackers[6].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[6].name, middleBannerResponse.trackers[6].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[6].associated_field, middleBannerResponse.trackers[6].associated_field, 'Trackers object');
@@ -1122,7 +1129,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[7].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[7].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[7].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[7].tid, 'test.cs-dev.video-complete', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[7].tid, `${trackerLink}.video-complete`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[7].is_auto_created, middleBannerResponse.trackers[7].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[7].name, middleBannerResponse.trackers[7].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[7].associated_field, middleBannerResponse.trackers[7].associated_field, 'Trackers object');
@@ -1133,7 +1140,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[8].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[8].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[8].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[8].tid, 'test.cs-dev.mute', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[8].tid, `${trackerLink}.mute`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[8].is_auto_created, middleBannerResponse.trackers[8].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[8].name, middleBannerResponse.trackers[8].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[8].associated_field, middleBannerResponse.trackers[8].associated_field, 'Trackers object');
@@ -1144,7 +1151,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[9].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[9].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[9].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[9].tid, 'test.cs-dev.unmute', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[9].tid, `${trackerLink}.unmute`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[9].is_auto_created, middleBannerResponse.trackers[9].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[9].name, middleBannerResponse.trackers[9].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[9].associated_field, middleBannerResponse.trackers[9].associated_field, 'Trackers object');
@@ -1155,7 +1162,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[10].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[10].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[10].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[10].tid, 'test.cs-dev.replay', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[10].tid, `${trackerLink}.replay`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[10].is_auto_created, middleBannerResponse.trackers[10].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[10].name, middleBannerResponse.trackers[10].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[10].associated_field, middleBannerResponse.trackers[10].associated_field, 'Trackers object');
@@ -1213,8 +1220,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -1234,7 +1241,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -1243,7 +1250,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -1252,7 +1259,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');
@@ -1310,8 +1317,8 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.execution, middleBannerResponse.execution, 'execution');
             assert.equal(snippetServiceResponse.body.format, middleBannerResponse.format, 'format');
             // verify main values in generated html
-            assert.include(snippetServiceResponse.body.generated, 'src=\"https://tk.kargo.com/t/test.cs-dev.impression');
-            assert.include(snippetServiceResponse.body.generated, '?rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&creative_source=dm&');
+            assert.include(snippetServiceResponse.body.generated, `src=\"https://tk.kargo.com/t/${trackerLink}.impression`);
+            assert.include(snippetServiceResponse.body.generated, 'rand={cachebuster}&uuid={IMP_ID}&aslot={AD_SLOT}&deal_id={DEAL_ID}&line_item_id={LINE_ITEM_ID}&creative_source=dm&');
             assert.include(snippetServiceResponse.body.generated, `creative_id=${middleBannerPayload.creative_id}`);
             assert.include(snippetServiceResponse.body.generated, `&id_alpha=${middleBannerPayload.id_alpha}&url=`);
             assert.include(snippetServiceResponse.body.generated, `data-creative-id=\"${middleBannerPayload.creative_id}`);
@@ -1331,7 +1338,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, middleBannerResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, middleBannerResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, middleBannerResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, middleBannerResponse.trackers[0].associated_field, 'Trackers object');
@@ -1340,7 +1347,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, middleBannerResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, middleBannerResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, middleBannerResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, middleBannerResponse.trackers[1].associated_field, 'Trackers object');
@@ -1349,7 +1356,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, middleBannerResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, middleBannerResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, middleBannerResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, middleBannerResponse.trackers[2].associated_field, 'Trackers object');

@@ -13,6 +13,13 @@ context('Snippet-Service API Test', () => {
     it('Test Snippet Service for Non-VAST Outstream Video Standard Creative', () => {
       const executionList = ['Viewstream'];
       const url = Cypress.config().baseUrl; // accesing baseUrl
+      let trackerLink;
+      // We need to check if url is STG or dev to see select the value of trackers
+      if (url.includes('dev') === true) {
+        trackerLink = 'test.cs-dev';
+      } else if (url.includes('staging') === true) {
+        trackerLink = 'test.cs-staging';
+      }
 
       let nonVastPayload;
       cy.fixture('/DM-Creatives-Body/NonVastOutstream-Body.json').then((payload) => {
@@ -76,7 +83,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.deleted_at, nonVatsResponse.deleted_at, 'deleted at');
             assert.isNumber(snippetServiceResponse.body.trackers[0].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[0].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[0].tid, 'test.cs-dev.impression-inside', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[0].tid, `${trackerLink}.impression-inside`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].is_auto_created, nonVatsResponse.trackers[0].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].name, nonVatsResponse.trackers[0].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[0].associated_field, nonVatsResponse.trackers[0].associated_field, 'Trackers object');
@@ -85,7 +92,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[0].url, nonVatsResponse.trackers[0].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[1].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[1].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[1].tid, 'test.cs-dev.impression', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[1].tid, `${trackerLink}.impression`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].is_auto_created, nonVatsResponse.trackers[1].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].name, nonVatsResponse.trackers[1].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[1].associated_field, nonVatsResponse.trackers[1].associated_field, 'Trackers object');
@@ -94,7 +101,7 @@ context('Snippet-Service API Test', () => {
             assert.equal(snippetServiceResponse.body.trackers[1].url, nonVatsResponse.trackers[1].url, 'Trackers object');
             assert.isNumber(snippetServiceResponse.body.trackers[2].id, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[2].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[2].tid, 'test.cs-dev.click', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[2].tid, `${trackerLink}.click`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].is_auto_created, nonVatsResponse.trackers[2].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].name, nonVatsResponse.trackers[2].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[2].associated_field, nonVatsResponse.trackers[2].associated_field, 'Trackers object');
@@ -105,7 +112,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[3].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[3].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[3].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[3].tid, 'test.cs-dev.video-start', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[3].tid, `${trackerLink}.video-start`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[3].is_auto_created, nonVatsResponse.trackers[3].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[3].name, nonVatsResponse.trackers[3].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[3].associated_field, nonVatsResponse.trackers[3].associated_field, 'Trackers object');
@@ -116,7 +123,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[4].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[4].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[4].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[4].tid, 'test.cs-dev.video-q1', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[4].tid, `${trackerLink}.video-q1`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[4].is_auto_created, nonVatsResponse.trackers[4].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[4].name, nonVatsResponse.trackers[4].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[4].associated_field, nonVatsResponse.trackers[4].associated_field, 'Trackers object');
@@ -127,7 +134,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[5].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[5].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[5].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[5].tid, 'test.cs-dev.video-q2', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[5].tid, `${trackerLink}.video-q2`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[5].is_auto_created, nonVatsResponse.trackers[5].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[5].name, nonVatsResponse.trackers[5].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[5].associated_field, nonVatsResponse.trackers[5].associated_field, 'Trackers object');
@@ -138,7 +145,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[6].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[6].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[6].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[6].tid, 'test.cs-dev.video-q3', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[6].tid, `${trackerLink}.video-q3`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[6].is_auto_created, nonVatsResponse.trackers[6].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[6].name, nonVatsResponse.trackers[6].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[6].associated_field, nonVatsResponse.trackers[6].associated_field, 'Trackers object');
@@ -149,7 +156,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[7].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[7].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[7].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[7].tid, 'test.cs-dev.video-complete', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[7].tid, `${trackerLink}.video-complete`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[7].is_auto_created, nonVatsResponse.trackers[7].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[7].name, nonVatsResponse.trackers[7].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[7].associated_field, nonVatsResponse.trackers[7].associated_field, 'Trackers object');
@@ -160,7 +167,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[8].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[8].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[8].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[8].tid, 'test.cs-dev.mute', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[8].tid, `${trackerLink}.mute`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[8].is_auto_created, nonVatsResponse.trackers[8].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[8].name, nonVatsResponse.trackers[8].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[8].associated_field, nonVatsResponse.trackers[8].associated_field, 'Trackers object');
@@ -171,7 +178,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[9].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[9].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[9].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[9].tid, 'test.cs-dev.unmute', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[9].tid, `${trackerLink}.unmute`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[9].is_auto_created, nonVatsResponse.trackers[9].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[9].name, nonVatsResponse.trackers[9].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[9].associated_field, nonVatsResponse.trackers[9].associated_field, 'Trackers object');
@@ -182,7 +189,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[10].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[10].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[10].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[10].tid, 'test.cs-dev.replay', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[10].tid, `${trackerLink}.replay`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[10].is_auto_created, nonVatsResponse.trackers[10].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[10].name, nonVatsResponse.trackers[10].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[10].associated_field, nonVatsResponse.trackers[10].associated_field, 'Trackers object');
@@ -193,7 +200,7 @@ context('Snippet-Service API Test', () => {
             assert.isNumber(snippetServiceResponse.body.trackers[11].id, 'Trackers object');
             assert.isNotNull(snippetServiceResponse.body.trackers[11].tid, 'Trackers object');
             assert.isString(snippetServiceResponse.body.trackers[11].tid, 'Trackers object');
-            assert.include(snippetServiceResponse.body.trackers[11].tid, 'test.cs-dev.received', 'Trackers object');
+            assert.include(snippetServiceResponse.body.trackers[11].tid, `${trackerLink}.received`, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[11].is_auto_created, nonVatsResponse.trackers[11].is_auto_created, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[11].name, nonVatsResponse.trackers[11].name, 'Trackers object');
             assert.equal(snippetServiceResponse.body.trackers[11].associated_field, nonVatsResponse.trackers[11].associated_field, 'Trackers object');
